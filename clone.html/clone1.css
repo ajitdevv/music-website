@@ -809,6 +809,14 @@ animation: rivars 1.5s reverse;
     border: white;
     transition: transform 0.3s;
 }
+#ram{
+      margin-left: 250px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: white;
+    transition: transform 0.3s;
+}
 
 .right button:hover {
 

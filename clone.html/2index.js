@@ -100,8 +100,41 @@
 // })
 
 // ? inputs
-let inputs = document.querySelector("#raju")
-inputs.addEventListener("input", function () {
-    console.log("typed")
+// let inputs = document.querySelector("#raju")
+// inputs.addEventListener("input", function (vr) {
+//     console.log("typed")
 
+// })
+
+// for exterct "data" i mean any one then fill this section then java script store this "data"
+// let inputs = document.querySelector("#raju")
+// inputs.addEventListener("input", function (vr) {
+//     console.log(vr.data)
+
+// })
+
+
+
+// then any user using backspace then "data" ritriv function give a null value andd tack extra memory then use if else to solve this problems
+
+// let inputdata = document.querySelector("#raju")
+// inputdata.addEventListener("input", function (raj) {
+//     if (raj.data !== null) {
+//        console.log(raj.data) 
+//     }
+    
+
+// })
+
+// ? chang 
+let phone_use = document.querySelector("#ram")
+let phone_slected= document.querySelector("#h221")
+phone_use.addEventListener("change",function (ele) {
+    console.log(ele.target.value)
+    // phone_slected.textContent="htm"
 })
+
+phone_use.addEventListener("change",function (elel) {
+    phone_slected.textContent=`${elel.target.value} devices slected`
+})
+// console.dir(phone_slected)
