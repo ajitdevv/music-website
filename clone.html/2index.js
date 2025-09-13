@@ -134,7 +134,7 @@ phone_use.addEventListener("change",function (ele) {
     // phone_slected.textContent="htm"
 })
 
-phone_use.addEventListener("change",function (elel) {
-    phone_slected.textContent=`${elel.target.value} devices slected`
-})
+// phone_use.addEventListener("change",function (elel) {
+//     phone_slected.textContent=`${elel.target.value} devices slected`
+// })
 // console.dir(phone_slected)
