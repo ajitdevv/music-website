@@ -117,14 +117,14 @@
 
 // then any user using backspace then "data" ritriv function give a null value andd tack extra memory then use if else to solve this problems
 
-// let inputdata = document.querySelector("#raju")
-// inputdata.addEventListener("input", function (raj) {
-//     if (raj.data !== null) {
-//        console.log(raj.data) 
-//     }
+let inputdata = document.querySelector("#raju")
+inputdata.addEventListener("input", function (raj) {
+    if (raj.data !== null) {
+       console.log(raj.data) 
+    }
     
 
-// })
+})
 
 // ? chang 
 let phone_use = document.querySelector("#ram")
