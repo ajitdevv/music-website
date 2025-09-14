@@ -170,5 +170,8 @@
 
 
 // ? mouseover,mousemove
-let section= document.querySelector(".skill")
-console.dir(section)
+let skill= document.querySelector(".skill")
+skill.addEventListener("mouseover",function () {
+    skill.Style.backgroundcolor="red"
+    
+})
