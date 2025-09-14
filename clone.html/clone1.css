@@ -361,7 +361,7 @@ img {
 
 .skill {
     max-width: 100%;
-    position: absolute;
+    /* position: absolute; */
     min-height: 100vh;
     background: rgb(12, 12, 43);
     color: #fff;

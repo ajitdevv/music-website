@@ -182,10 +182,19 @@
     
 // })
 // ? mousemove
-let skill= document.querySelector(".skill")
-window.addEventListener("mousemove",function (val) {
-    skill.style.top=val.clientY+"px"
-    skill.style.left=val.clientX+"px"
-/// use for this first all of use position abslout in css 
+// let skill= document.querySelector(".skill")
+// window.addEventListener("mousemove",function (val) {
+//     skill.style.top=val.clientY+"px"
+//     skill.style.left=val.clientX+"px"
+// /// use for this first all of use position abslout in css 
+    
+// })
+// ? keyup
+
+
+// * event bubbling and capturing
+let nav=document.querySelector(".navbar1")
+nav.addEventListener("click",function () {
+    alert("not recomend")
     
 })
