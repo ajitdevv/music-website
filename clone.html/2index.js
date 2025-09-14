@@ -193,6 +193,26 @@
 
 
 // * event bubbling 
+let a=document.querySelector(".a")
+let b=document.querySelector(".b")
+let c=document.querySelector(".c")
+let btn=document.querySelector("button")
+a.addEventListener("click",function () {
+    console.log("a click")
+    
+})
+b.addEventListener("click",function () {
+    console.log("b click")
+    
+})
+c.addEventListener("click",function () {
+    console.log("c click")
+    
+})
+btn.addEventListener("click",function () {
+    console.log("button click")
+    
+})
 
 
 
