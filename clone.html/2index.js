@@ -192,7 +192,41 @@
 // ? keyup
 
 
-// * event bubbling 
+// * event bubbling ===> there bubbling event means this his proform start to end this his triger deep to outer serface ever perant listener
+
+// let a=document.querySelector(".a")
+// let b=document.querySelector(".b")
+// let c=document.querySelector(".c")
+// let btn=document.querySelector("button")
+// a.addEventListener("click",function () {
+//     console.log("a click")
+    
+// })
+// b.addEventListener("click",function () {
+//     console.log("b click")
+    
+// })
+// c.addEventListener("click",function () {
+//     console.log("c click")
+    
+// })
+// btn.addEventListener("click",function () {
+//     console.log("button click")
+    
+// })
+
+
+
+// ? upwords (extra)
+// let nav=document.querySelector(".navbar1")
+// nav.addEventListener("click",function () {
+//     alert("not recomend")
+    
+// })
+
+// * event capter ===> this ihs use for menuclute the sequence of bubbling for use of ,true like this a.addEventListener("click",function () {
+//* console.log("a click")
+//* },true) after function }
 let a=document.querySelector(".a")
 let b=document.querySelector(".b")
 let c=document.querySelector(".c")
@@ -200,7 +234,7 @@ let btn=document.querySelector("button")
 a.addEventListener("click",function () {
     console.log("a click")
     
-})
+},true)
 b.addEventListener("click",function () {
     console.log("b click")
     
@@ -213,14 +247,3 @@ btn.addEventListener("click",function () {
     console.log("button click")
     
 })
-
-
-
-// ? upwords (extra)
-// let nav=document.querySelector(".navbar1")
-// nav.addEventListener("click",function () {
-//     alert("not recomend")
-    
-// })
-
-// * event capturing
