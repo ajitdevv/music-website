@@ -361,8 +361,9 @@ img {
 
 .skill {
     max-width: 100%;
+    position: absolute;
     min-height: 100vh;
-    background: #0a0a23;
+    background: rgb(12, 12, 43);
     color: #fff;
     padding: 75px 20px 40px;
     overflow-x: hidden;

@@ -171,14 +171,21 @@
 
 
 // ? mouseover,mouseout
-let skill= document.querySelector(".skill")
-console.dir(skill)
-skill.addEventListener("mouseover",function () {
-    skill.style.backgroundColor="red"
+// let skill= document.querySelector(".skill")
+// console.dir(skill)
+// skill.addEventListener("mouseover",function () {
+//     skill.style.backgroundColor="red"
     
-})
-skill.addEventListener("mouseout",function () {
-    skill.style.backgroundColor="rgb(12, 12, 43)"
+// })
+// skill.addEventListener("mouseout",function () {
+//     skill.style.backgroundColor="rgb(12, 12, 43)"
     
-})
+// })
 // ? mousemove
+let skill= document.querySelector(".skill")
+window.addEventListener("mousemove",function (val) {
+    skill.style.top=val.clientY+"px"
+    skill.style.left=val.clientX+"px"
+/// use for this first all of use position abslout in css 
+    
+})
