@@ -227,23 +227,31 @@
 // * event capter ===> this ihs use for menuclute the sequence of bubbling for use of ,true like this a.addEventListener("click",function () {
 //* console.log("a click")
 //* },true) after function }
-let a=document.querySelector(".a")
-let b=document.querySelector(".b")
-let c=document.querySelector(".c")
-let btn=document.querySelector("button")
-a.addEventListener("click",function () {
-    console.log("a click")
+// let a=document.querySelector(".a")
+// let b=document.querySelector(".b")
+// let c=document.querySelector(".c")
+// let btn=document.querySelector("button")
+// a.addEventListener("click",function () {
+//     console.log("a click")
     
-},true)
-b.addEventListener("click",function () {
-    console.log("b click")
+// },true)
+// b.addEventListener("click",function () {
+//     console.log("b click")
     
-})
-c.addEventListener("click",function () {
-    console.log("c click")
+// })
+// c.addEventListener("click",function () {
+//     console.log("c click")
     
-})
-btn.addEventListener("click",function () {
-    console.log("button click")
+// })
+// btn.addEventListener("click",function () {
+//     console.log("button click")
+    
+// })
+
+//! live cater counter
+let inp=document.querySelector("input")
+let span=document.querySelector("span")
+inp.addEventListener("input", function () {
+    span.textContent=inp.value.length
     
 })
