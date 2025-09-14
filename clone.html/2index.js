@@ -89,8 +89,9 @@
 // 2. inputs
 // 3. change
 // 4. submit
-// 5. mouseover,mousemove
-// 6. keyup
+// 5. mouseover,mouseout
+// 6. mousemove
+// 7. keyup
 
 
 //  ? click
@@ -169,9 +170,15 @@
 // })
 
 
-// ? mouseover,mousemove
+// ? mouseover,mouseout
 let skill= document.querySelector(".skill")
+console.dir(skill)
 skill.addEventListener("mouseover",function () {
-    skill.Style.backgroundcolor="red"
+    skill.style.backgroundColor="red"
     
 })
+skill.addEventListener("mouseout",function () {
+    skill.style.backgroundColor="rgb(12, 12, 43)"
+    
+})
+// ? mousemove
