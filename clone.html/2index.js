@@ -89,7 +89,7 @@
 // 2. inputs
 // 3. change
 // 4. submit
-// 5. mouseover
+// 5. mouseover,mousemove
 // 6. keyup
 
 
@@ -117,24 +117,58 @@
 
 // then any user using backspace then "data" ritriv function give a null value andd tack extra memory then use if else to solve this problems
 
-let inputdata = document.querySelector("#raju")
-inputdata.addEventListener("input", function (raj) {
-    if (raj.data !== null) {
-       console.log(raj.data) 
-    }
+// let inputdata = document.querySelector("#raju")
+// inputdata.addEventListener("input", function (raj) {
+//     if (raj.data !== null) {
+//        console.log(raj.data) 
+//     }
     
 
-})
+// })
 
 // ? chang 
-let phone_use = document.querySelector("#ram")
-let phone_slected= document.querySelector("#h221")
-phone_use.addEventListener("change",function (ele) {
-    console.log(ele.target.value)
+
+// \\ add in html then this code work 
+
+
+                   // <h2 id="h221">select any one phone</h2>
+                    // <select id="ram">
+                    //     <option selected disabled>chose one</option>
+                    //     <option value="i phone">i phone</option>
+                    //     <option value="i phone 12">i phone 12</option>
+                    //     <option value="i phone 13">i phone 13</option>
+                    //     <option value="i phone 14">i phone 14</option>
+                    //     <option value="i phone 15">i phone 15</option>
+
+                    // </select>
+              
+// let phone_use = document.querySelector("#ram")
+// let phone_slected= document.querySelector("#h221")
+// phone_use.addEventListener("change",function (ele) {
+//     console.log(ele.target.value)
     // phone_slected.textContent="htm"
-})
+// })
 
 // phone_use.addEventListener("change",function (elel) {
 //     phone_slected.textContent=`${elel.target.value} devices slected`
 // })
 // console.dir(phone_slected)
+
+
+
+
+
+// ? submit
+// let form_data=document.querySelector("#form1")
+// let inputs=document.querySelectorAll("input")
+
+// form_data.addEventListener("submit", function (babu) {
+//     babu.preventDefault();
+//     console.log(inputs[0].value,inputs[1].value)
+    
+// })
+
+
+// ? mouseover,mousemove
+let section= document.querySelector(".skill")
+console.dir(section)
