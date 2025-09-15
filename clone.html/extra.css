@@ -60,7 +60,7 @@ body {
     color: var(--muted);
 }
 
-.field__input {
+.field__gmail {
     appearance: none;
     border: 1px solid #e6e9ef;
     padding: .75rem .9rem;
@@ -70,7 +70,21 @@ body {
     transition: box-shadow .15s, border-color .15s;
 }
 
-.field__input:focus {
+.field__gmail:focus {
+    border-color: rgba(37, 99, 235, 0.8);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+}
+.field__password {
+    appearance: none;
+    border: 1px solid #e6e9ef;
+    padding: .75rem .9rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow .15s, border-color .15s;
+}
+
+.field__password:focus {
     border-color: rgba(37, 99, 235, 0.8);
     box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
 }

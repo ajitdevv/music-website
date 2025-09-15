@@ -249,4 +249,25 @@
 // })
 
 // ! form and form validitesion
-let a=document.querySelector("P")
+// let a=document.querySelector("P")
+document.getElementById("myForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // stop form from submitting
+
+  const fullname = document.getElementById("fullname").value.trim();
+  const password = document.getElementById("password").value;
+  const message = document.getElementById("message");
+
+  // password rule: at least 8 chars, one uppercase, one special char
+  const passRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+  if (fullname.length < 3) {
+    message.style.color = "red";
+    message.textContent = "❌ Full name must be at least 3 characters.";
+  } else if (!passRegex.test(password)) {
+    message.style.color = "red";
+    message.textContent = "❌ Password must be 8+ chars, include 1 uppercase & 1 special character.";
+  } else {
+    message.style.color = "green";
+    message.textContent = "✅ Form submitted successfully!";
+  }
+});
