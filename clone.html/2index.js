@@ -249,25 +249,33 @@
 // })
 
 // ! form and form validitesion
-// let a=document.querySelector("P")
-document.getElementById("myForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // stop form from submitting
 
-  const fullname = document.getElementById("fullname").value.trim();
-  const password = document.getElementById("password").value;
-  const message = document.getElementById("message");
+// document.getElementById("myForm").addEventListener("submit", function(e) {
+//   e.preventDefault(); // stop form from submitting
 
-  // password rule: at least 8 chars, one uppercase, one special char
-  const passRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+//   const fullname = document.getElementById("fullname").value.trim();
+//   const password = document.getElementById("password").value;
+//   const message = document.getElementById("message");
 
-  if (fullname.length < 3) {
-    message.style.color = "red";
-    message.textContent = "❌ Full name must be at least 3 characters.";
-  } else if (!passRegex.test(password)) {
-    message.style.color = "red";
-    message.textContent = "❌ Password must be 8+ chars, include 1 uppercase & 1 special character.";
-  } else {
-    message.style.color = "green";
-    message.textContent = "✅ Form submitted successfully!";
-  }
-});
+//   // password rule: at least 8 chars, one uppercase, one special char
+//   const passRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+//   if (fullname.length < 3) {
+//     message.style.color = "red";
+//     message.textContent = "❌ Full name must be at least 3 characters.";
+//   } else if (!passRegex.test(password)) {
+//     message.style.color = "red";
+//     message.textContent = "❌ Password must be 8+ chars, include 1 uppercase & 1 special character.";
+//   } else {
+//     message.style.color = "green";
+//     message.textContent = "✅ Form submitted successfully!";
+//   }
+// }); 
+
+
+// ! timers and interval
+// ? setTimeout ===> this his use to do set any type of time like 3sec any more but there (3sec= 3000) without use of any type of unit,s...
+setTimeout(function (params) {
+    console.log("hay baby ..💕💕❤️")
+    
+},3000)
