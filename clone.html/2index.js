@@ -123,7 +123,7 @@
 //     if (raj.data !== null) {
 //        console.log(raj.data) 
 //     }
-    
+
 
 // })
 
@@ -132,22 +132,22 @@
 // \\ add in html then this code work 
 
 
-                   // <h2 id="h221">select any one phone</h2>
-                    // <select id="ram">
-                    //     <option selected disabled>chose one</option>
-                    //     <option value="i phone">i phone</option>
-                    //     <option value="i phone 12">i phone 12</option>
-                    //     <option value="i phone 13">i phone 13</option>
-                    //     <option value="i phone 14">i phone 14</option>
-                    //     <option value="i phone 15">i phone 15</option>
+// <h2 id="h221">select any one phone</h2>
+// <select id="ram">
+//     <option selected disabled>chose one</option>
+//     <option value="i phone">i phone</option>
+//     <option value="i phone 12">i phone 12</option>
+//     <option value="i phone 13">i phone 13</option>
+//     <option value="i phone 14">i phone 14</option>
+//     <option value="i phone 15">i phone 15</option>
 
-                    // </select>
-              
+// </select>
+
 // let phone_use = document.querySelector("#ram")
 // let phone_slected= document.querySelector("#h221")
 // phone_use.addEventListener("change",function (ele) {
 //     console.log(ele.target.value)
-    // phone_slected.textContent="htm"
+// phone_slected.textContent="htm"
 // })
 
 // phone_use.addEventListener("change",function (elel) {
@@ -166,7 +166,7 @@
 // form_data.addEventListener("submit", function (babu) {
 //     babu.preventDefault();
 //     console.log(inputs[0].value,inputs[1].value)
-    
+
 // })
 
 
@@ -175,11 +175,11 @@
 // console.dir(skill)
 // skill.addEventListener("mouseover",function () {
 //     skill.style.backgroundColor="red"
-    
+
 // })
 // skill.addEventListener("mouseout",function () {
 //     skill.style.backgroundColor="rgb(12, 12, 43)"
-    
+
 // })
 // ? mousemove
 // let skill= document.querySelector(".skill")
@@ -187,7 +187,7 @@
 //     skill.style.top=val.clientY+"px"
 //     skill.style.left=val.clientX+"px"
 /// use for this first all of use position abslout in css of clone.html
-    
+
 // })
 // ? keyup
 
@@ -200,19 +200,19 @@
 // let btn=document.querySelector("button")
 // a.addEventListener("click",function () {
 //     console.log("a click")
-    
+
 // })
 // b.addEventListener("click",function () {
 //     console.log("b click")
-    
+
 // })
 // c.addEventListener("click",function () {
 //     console.log("c click")
-    
+
 // })
 // btn.addEventListener("click",function () {
 //     console.log("button click")
-    
+
 // })
 
 
@@ -221,7 +221,7 @@
 // let nav=document.querySelector(".navbar1")
 // nav.addEventListener("click",function () {
 //     alert("not recomend")
-    
+
 // })
 
 // * event capter ===> this ihs use for menuclute the sequence of bubbling for use of ,true like this a.addEventListener("click",function () {
@@ -233,19 +233,19 @@
 // let btn=document.querySelector("button")
 // a.addEventListener("click",function () {
 //     console.log("a click")
-    
+
 // },true)
 // b.addEventListener("click",function () {
 //     console.log("b click")
-    
+
 // })
 // c.addEventListener("click",function () {
 //     console.log("c click")
-    
+
 // })
 // btn.addEventListener("click",function () {
 //     console.log("button click")
-    
+
 // })
 
 // ! form and form validitesion
@@ -277,12 +277,18 @@
 // ? setTimeout ===> this his use to do set any type of time like 3sec any more but there (3sec= 3000) without use of any type of unit,s...
 // setTimeout(function (params) {
 //     console.log("hay baby ..💕💕❤️")
-    
-// },3000)
+
+// }, 3000)
 
 // ? clearTimeout ===> this his use for bipas the setTime function like this ==>
- let ram=   setTimeout(function () {
-        console.log("hy every one ^_^ ^_~")
-        
-    },2000)
-clearTimeout(ram)
+// let ram = setTimeout(function () {
+//     console.log("hy every one ^_~ ^_~")
+
+// }, 2000)
+// clearTimeout(ram)
+
+// ? setInterval ===> this his use to start a loop on setTimeout
+setInterval(function () { 
+    console.log("@@@@@")
+    
+},2000)
