@@ -288,7 +288,14 @@
 // clearTimeout(ram)
 
 // ? setInterval ===> this his use to start a loop on setTimeout
-setInterval(function () { 
-    console.log("@@@@@")
-    
-},2000)
+// setInterval(function () {
+//     console.log("@@@@@")
+
+// }, 2000)
+
+// ? clearInterval ===> this his use to byepass of the function setInterval
+let vik = setInterval(function () {
+    console.log("waw this his osm 😘😘")
+
+}, 2000)
+clearInterval(vik)
