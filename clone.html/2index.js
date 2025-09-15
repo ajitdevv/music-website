@@ -294,8 +294,26 @@
 // }, 2000)
 
 // ? clearInterval ===> this his use to byepass of the function setInterval
-let vik = setInterval(function () {
-    console.log("waw this his osm 😘😘")
+// let vik = setInterval(function () {
+//     console.log("waw this his osm 😘😘")
 
-}, 2000)
-clearInterval(vik)
+// }, 2000)
+// clearInterval(vik)
+
+
+//? example of interval
+let a = 11
+
+let vik = setInterval(function () {
+    if (a >= 1) {
+        a--,
+            console.log(a)
+
+
+    }
+    else {
+        clearInterval(vik)
+    }
+
+
+},1000)
