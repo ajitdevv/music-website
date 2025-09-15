@@ -275,7 +275,14 @@
 
 // ! timers and interval
 // ? setTimeout ===> this his use to do set any type of time like 3sec any more but there (3sec= 3000) without use of any type of unit,s...
-setTimeout(function (params) {
-    console.log("hay baby ..💕💕❤️")
+// setTimeout(function (params) {
+//     console.log("hay baby ..💕💕❤️")
     
-},3000)
+// },3000)
+
+// ? clearTimeout ===> this his use for bipas the setTime function like this ==>
+ let ram=   setTimeout(function () {
+        console.log("hy every one ^_^ ^_~")
+        
+    },2000)
+clearTimeout(ram)
