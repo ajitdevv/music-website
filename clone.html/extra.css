@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --bg: #f3f6fb;
     --card: #ffffff;
     --accent: #2563eb;
@@ -127,4 +127,62 @@ a {
     .card__title {
         font-size: 1.25rem
     }
+} */
+ *{
+    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn{
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: 5px solid black;
+    color: white;
+    background-color: black ;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    display: block;
+
+    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    &:hover{
+    -webkit-transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -moz-transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -ms-transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -o-transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+        scale: 1.1;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
 }
+.div1{
+    width: 420px;
+    border-radius: 20px;
+    
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   
+}
+.div2{
+    display: none;}

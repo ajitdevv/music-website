@@ -302,18 +302,32 @@
 
 
 //? example of interval
-let a = 11
+// let a = 11
 
-let vik = setInterval(function () {
-    if (a >= 1) {
-        a--,
-            console.log(a)
-
-
-    }
-    else {
-        clearInterval(vik)
-    }
+// let vik = setInterval(function () {
+//     if (a >= 1) {
+//         a--,
+//             console.log(a)
 
 
-},1000)
+//     }
+//     else {
+//         clearInterval(vik)
+//     }
+
+
+// },1000)
+
+
+// ? Hide a alert after 5sec  
+let btn = document.querySelector(".btn")
+let div = document.querySelector(".div2")
+btn.addEventListener("click", function () {
+    div.style.display = "block"
+    btn.style.display = "none"
+    setTimeout(function (params) {
+        div.style.display = "none"
+        btn.style.display = "block"
+    }, 3000)
+
+})
