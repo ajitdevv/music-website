@@ -5,52 +5,45 @@
 }
 
 .dark {
-    ---background--color-imp:linear-gradient(145deg,
-  #1e2a40,   /* dark navy blue */
-  #3a2b4f,   /* dark purple */
-  #2c2c2c,   /* charcoal gray */
-  #214447,   /* deep teal */
-  #2e443a    /* dark mint green */
-);
+    ---background--color-imp: linear-gradient(145deg,
+            #1e2a40,
+            #3a2b4f,
+            #2c2c2c,
+            #214447,
+            #2e443a);
     --background-color: linear-gradient(145deg, #1e2a40, #2c2c2c);
     --text-color: #f0f0f0;
     --primary-color: #1e90ff;
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
-              inset -4px -4px 8px rgba(255, 255, 255, 0.1);
-    
+        inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+
     /* btn */
-   --background-color2: linear-gradient(145deg, #24364e, #1e2a40);
+    --background-color2: linear-gradient(145deg, #24364e, #1e2a40);
     --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
-                      -5px -5px 12px rgba(255, 255, 255, 0.05);
-                         ---btn--text-color:#e6e1e1;
+        -5px -5px 12px rgba(255, 255, 255, 0.05);
+    ---btn--text-color: #e6e1e1;
 
 }
 
-:root {
+.light {
     /* search */
     ---background--color-imp: linear-gradient(145deg,
             #8ec5fc,
-            
             #e0c3fc,
-            
             #f9f9f9,
-            /* soft white */
             #d1f4f9,
-            /* aqua-mint */
-            #c2ffd8
-            /* light green-mint */
-        );
+            #c2ffd8);
     --background-color: linear-gradient(145deg, #9bd0ff, #ffffff);
     --text-color: #333;
     --primary-color: #1e90ff;
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
         inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-    
+
     /* btn */
     --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
     ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
         -5px -5px 12px rgba(255, 255, 255, 0.6);
-        ---btn--text-color:#383333;
+    ---btn--text-color: #383333;
 
 }
 
@@ -58,7 +51,7 @@
     height: 100vh;
     position: relative;
 
-    /* background: linear-gradient(135deg, #000000, #0a0a0a, #1a1a1a); */
+
 
     background: var(---background--color-imp);
 }
@@ -81,7 +74,7 @@
 
     &:hover {
 
-        /* box-shadow: var(--box-shadow); */
+
         box-shadow: var(---hover--box-shadow2);
     }
 
@@ -95,41 +88,7 @@
     }
 }
 
-/* .search_theme {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px 18px;
-    border-radius: 40px;
-    width: 280px;
 
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); */
-
-    /* andar ki taraf (inset) shadow */
-    /* box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
-        inset -4px -4px 8px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-
-    &:hover { */
-        /* hover pe bahar aa jaye */
-        /* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6),
-            -4px -4px 15px rgba(255, 255, 255, 0.1);
-        background: rgba(255, 255, 255, 0.15);
-    }
-
-    & input {
-        border: none;
-        outline: none;
-        background: transparent;
-        font-size: 15px;
-        width: 100%;
-        color: var(--text-color);
-
-        &::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-    }
-} */
 
 .btn {
     position: absolute;
@@ -152,23 +111,23 @@
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 
-    /* ===> use this for chang theme */
-    /* box-shadow: 5px 5px 15px #0a0a0a, 
-              -5px -5px 15px #2a2a2a;
-  transition: all 0.3s ease; */
+
+    &:hover {
+        box-shadow: var(---hover--box-shadow2);
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+
+
+    }
 }
 
-/* hover effect → button upar uth jaye */
-/* .btnn:hover {
-    box-shadow: 5px 5px 15px #0a0a0a, 
-            -5px -5px 15px #ffffff; */
-.btnn:hover {
-    box-shadow: var(---hover--box-shadow2);
-    transform: translateY(-2px);
-    transition: all 0.3s ease;
-    /* box-shadow: inset 5px 5px 15px #0a0a0a, 
-              inset -5px -5px 15px #2a2a2a;
-  transform: translateY(-2px);
-  transition: all 0.3s ease; */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
+    & img {
+        width: 50px;
+        height: 50px;
+    }
 }
