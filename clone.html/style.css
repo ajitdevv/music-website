@@ -4,10 +4,53 @@
     box-sizing: border-box;
 }
 
-:root {
-    --background-color: #000000;
-    --text-color: #ffffff;
+.dark {
+    ---background--color-imp:linear-gradient(145deg,
+  #1e2a40,   /* dark navy blue */
+  #3a2b4f,   /* dark purple */
+  #2c2c2c,   /* charcoal gray */
+  #214447,   /* deep teal */
+  #2e443a    /* dark mint green */
+);
+    --background-color: linear-gradient(145deg, #1e2a40, #2c2c2c);
+    --text-color: #f0f0f0;
     --primary-color: #1e90ff;
+    --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+              inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+    
+    /* btn */
+   --background-color2: linear-gradient(145deg, #24364e, #1e2a40);
+    --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
+                      -5px -5px 12px rgba(255, 255, 255, 0.05);
+                         ---btn--text-color:#e6e1e1;
+
+}
+
+:root {
+    /* search */
+    ---background--color-imp: linear-gradient(145deg,
+            #8ec5fc,
+            
+            #e0c3fc,
+            
+            #f9f9f9,
+            /* soft white */
+            #d1f4f9,
+            /* aqua-mint */
+            #c2ffd8
+            /* light green-mint */
+        );
+    --background-color: linear-gradient(145deg, #9bd0ff, #ffffff);
+    --text-color: #333;
+    --primary-color: #1e90ff;
+    --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    
+    /* btn */
+    --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
+    ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
+        -5px -5px 12px rgba(255, 255, 255, 0.6);
+        ---btn--text-color:#383333;
 
 }
 
@@ -16,41 +59,30 @@
     position: relative;
 
     /* background: linear-gradient(135deg, #000000, #0a0a0a, #1a1a1a); */
-    /* this his use in extra  */
-    /* color: var(--text-color); */
 
+    background: var(---background--color-imp);
 }
 
-/* .search { */
-/* box-shadow: rgba(0, 0, 0, 0.56) 0px 1px 7px -4px; */
-
-/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-
-
-
-
-/* } */
 
 .search {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(145deg, #e0f0ff, #ffffff);
+    background: var(--background-color);
     padding: 12px 18px;
     border-radius: 40px;
     width: 280px;
 
 
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-        inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 
 
     &:hover {
 
-        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15),
-            -4px -4px 12px rgba(255, 255, 255, 0.9);
+        /* box-shadow: var(--box-shadow); */
+        box-shadow: var(---hover--box-shadow2);
     }
 
     & input {
@@ -59,11 +91,11 @@
         background: transparent;
         font-size: 15px;
         width: 100%;
-        color: #333;
+        color: var(--text-color);
     }
 }
 
-.search_theme {
+/* .search_theme {
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px 18px;
@@ -71,16 +103,16 @@
     width: 280px;
 
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
 
     /* andar ki taraf (inset) shadow */
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+    /* box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 
-    &:hover {
+    &:hover { */
         /* hover pe bahar aa jaye */
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6),
+        /* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6),
             -4px -4px 15px rgba(255, 255, 255, 0.1);
         background: rgba(255, 255, 255, 0.15);
     }
@@ -91,48 +123,50 @@
         background: transparent;
         font-size: 15px;
         width: 100%;
-        color: #fff;
+        color: var(--text-color);
 
         &::placeholder {
             color: rgba(255, 255, 255, 0.6);
         }
     }
-}
+} */
 
 .btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .btnn {
-  border: none;
-  outline: none;
-  background: linear-gradient(145deg, #9bd0ff, #ffffff); 
-  color: #383333;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: var(--background-color2);
+    color: var(---btn--text-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
 
 
-   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-        inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 
-   /* ===> use this for chang theme */
-   /* box-shadow: 5px 5px 15px #0a0a0a, 
+    /* ===> use this for chang theme */
+    /* box-shadow: 5px 5px 15px #0a0a0a, 
               -5px -5px 15px #2a2a2a;
   transition: all 0.3s ease; */
-} 
+}
 
 /* hover effect → button upar uth jaye */
-.btnn:hover {
+/* .btnn:hover {
     box-shadow: 5px 5px 15px #0a0a0a, 
-            -5px -5px 15px #ffffff;
-transform: translateY(-2px);
-transition: all 0.3s ease;
-  /* box-shadow: inset 5px 5px 15px #0a0a0a, 
+            -5px -5px 15px #ffffff; */
+.btnn:hover {
+    box-shadow: var(---hover--box-shadow2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    /* box-shadow: inset 5px 5px 15px #0a0a0a, 
               inset -5px -5px 15px #2a2a2a;
   transform: translateY(-2px);
   transition: all 0.3s ease; */
