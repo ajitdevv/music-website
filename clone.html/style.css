@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #1e90ff;
+
+}
+
+#home_page {
+    height: 100vh;
+    position: relative;
+
+    /* background: linear-gradient(135deg, #000000, #0a0a0a, #1a1a1a); */
+    /* this his use in extra  */
+    /* color: var(--text-color); */
+
+}
+
+/* .search { */
+/* box-shadow: rgba(0, 0, 0, 0.56) 0px 1px 7px -4px; */
+
+/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+
+
+
+
+/* } */
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #e0f0ff, #ffffff);
+    padding: 12px 18px;
+    border-radius: 40px;
+    width: 280px;
+
+
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+
+
+    &:hover {
+
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15),
+            -4px -4px 12px rgba(255, 255, 255, 0.9);
+    }
+
+    & input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 15px;
+        width: 100%;
+        color: #333;
+    }
+}
+
+.search_theme {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 18px;
+    border-radius: 40px;
+    width: 280px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* andar ki taraf (inset) shadow */
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+        /* hover pe bahar aa jaye */
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6),
+            -4px -4px 15px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    & input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 15px;
+        width: 100%;
+        color: #fff;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+.btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btnn {
+  border: none;
+  outline: none;
+  background: linear-gradient(145deg, #9bd0ff, #ffffff); 
+  color: #383333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+
+
+   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+
+   /* ===> use this for chang theme */
+   /* box-shadow: 5px 5px 15px #0a0a0a, 
+              -5px -5px 15px #2a2a2a;
+  transition: all 0.3s ease; */
+} 
+
+/* hover effect → button upar uth jaye */
+.btnn:hover {
+    box-shadow: 5px 5px 15px #0a0a0a, 
+            -5px -5px 15px #ffffff;
+transform: translateY(-2px);
+transition: all 0.3s ease;
+  /* box-shadow: inset 5px 5px 15px #0a0a0a, 
+              inset -5px -5px 15px #2a2a2a;
+  transform: translateY(-2px);
+  transition: all 0.3s ease; */
+
+}

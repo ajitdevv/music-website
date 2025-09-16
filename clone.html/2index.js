@@ -319,15 +319,34 @@
 // },1000)
 
 
-// ? Hide a alert after 5sec  
-let btn = document.querySelector(".btn")
-let div = document.querySelector(".div2")
-btn.addEventListener("click", function () {
-    div.style.display = "block"
-    btn.style.display = "none"
-    setTimeout(function (params) {
-        div.style.display = "none"
-        btn.style.display = "block"
-    }, 3000)
+// ? Hide a div after 3 sec  
+// let btn = document.querySelector(".btn")
+// let div = document.querySelector(".div2")
+// btn.addEventListener("click", function () {
+//     div.style.display = "block"
+//     btn.style.display = "none"
+//     setTimeout(function (params) {
+//         div.style.display = "none"
+//         btn.style.display = "block"
+//     }, 3000)
 
-})
+// })
+
+//! localStorage,sessionStorage AND Cookie
+// * localStorage
+//? store valuse  ===> setItem
+// localStorage.setItem("name","prince")
+// ? fetch data ===> getItem
+// let vaer=localStorage.getItem("name")
+// ? remove from storage ===> removeItem
+// localStorage.removeItem("name")
+// ? update ===> this his same store value
+// * sessionStorage
+// localStorage and sessionStorage both are same 
+
+
+
+
+// if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+//     document.body.classList.add("dark")
+// }
