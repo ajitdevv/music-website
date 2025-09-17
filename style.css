@@ -208,7 +208,7 @@
 
 
 
-/* .song-card {
+.song-card {
   position: relative;
   width: 300px;
   height: 260px;
@@ -220,11 +220,11 @@
   background-repeat: no-repeat; 
   transition: transform 0.3s ease;
   cursor: pointer;
-} */
-
-.song-card:hover {
-  transform: scale(1.05);
 }
+
+/* .song-card:hover {
+  transform: scale(1.05);
+} */
 
 .song-card .overlay {
   position: absolute;
