@@ -1,12 +1,79 @@
 [
   {
-    "name": "Kesariya",
-    "singer": "Arijit Singh",
+    "name": "STFU",
+    "singer": "AP Dhillon Shinda Kahlon",
+    
     "image": "/wintages.jpg",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758135305/AP_dhillon_Songs_SlowedReverb_MAYUR_lofi_maker_fap6dd.mp3"
+  },
+  {
+    "name": "Bulleya",
+    "singer": "Papon",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134703/Bulleya_Full_Song_Sultan_Salman_Khan_Anushka_Sharma_Papon_Vishal_Shekhar_Irshad_Kamil_ko8vzp.mp3"
+  },
+  {
+    "name": "Deewaniyat",
+    "singer": "Vishal Mishra",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134876/DEEWANIYAT_Title_Track_-_Ek_Deewane_Ki_Deewaniyat_Harshvardhan_Sonam_Vishal_KaushikGudduKunaal_i8trld.mp3"
+  },
+  {
+    "name": "Finding Her (Jana Mere Sawalon Ka Manzar Tu)",
+    "singer": "Kushagra",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134759/Finding_Her_Jana_Mere_Sawalon_Ka_Manzar_Tu_Kushagra_Vanshika_Bharath_Karan_Maini_UR_Debut_ejxaqx.mp3"
+  },
+  {
+    "name": "Jhol",
+    "singer": "Maanu & Annural Khalid",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134757/Maanu_Annural_Khalid_-_Jhol_Lyrics_uvh0it.mp3"
+  },
+  {
+    "name": "MASHOOQA",
+    "singer": "Yo Yo Honey Singh, Charmee Zaveri (debut), Pho (vocals)",
+    "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
   },
   {
-    "name": "Tum Hi Ho",
+    "name": "Naam Chale",
+    "singer": "Vikram Sarkar",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Raatan Jag Jag Ke Mehnta Ne Kitiya",
+    "singer": "AP Dhillon",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Sabhi Khas",
+    "singer": "Sumit Parta",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Shaky",
+    "singer": "Sanju Rathod",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Lehra Do",
+    "singer": "Arijit Singh",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Lehra Do",
+    "singer": "Arijit Singh",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Lehra Do",
     "singer": "Arijit Singh",
     "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
