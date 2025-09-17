@@ -3,8 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+.dark{
+    :root {
+  /* 🎨 Main Color Palette */
+  --primary-color: #FFD700; /* Golden */
+  --text-color: #FFFFFF;    /* White */
+  --background-color: #000000; /* Black */
 
-.dark {
+  /* 🎨 Optional gradient background with just golden and black */
+  --background-gradient: linear-gradient(145deg, #000000, #1a1a1a);
+
+  /* 🧊 Shadows */
+  --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.8),
+                inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+
+  --hover-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7),
+                      -5px -5px 12px rgba(255, 255, 255, 0.08);
+
+  /* 🟡 Button Text */
+  --btn-text-color: #FFD700; /* Golden */
+}
+
+}
+
+/* .dark {
     ---background--color-imp: linear-gradient(145deg,
             #1e2a40,
             #3a2b4f,
@@ -23,7 +45,7 @@
         -5px -5px 12px rgba(255, 255, 255, 0.05);
     ---btn--text-color: #e6e1e1;
 
-}
+} */
 
 .light {
 
