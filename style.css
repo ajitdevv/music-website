@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* .dark{
     
  
@@ -25,7 +26,7 @@
 } */
 
 .dark {
-    
+
     ---background--color-imp: linear-gradient(145deg,
             #1e2a40,
             #3a2b4f,
@@ -44,7 +45,7 @@
         -5px -5px 12px rgba(255, 255, 255, 0.05);
     ---btn--text-color: #e6e1e1;
 
-} 
+}
 
 .light {
 
@@ -209,39 +210,40 @@
 
 
 .song-card {
-  position: relative;
-  width: 300px;
-  height: 260px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  background-size: cover;        
-  background-position: center;  
-  background-repeat: no-repeat; 
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
+    position: relative;
+    width: 300px;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 
-/* .song-card:hover {
-  transform: scale(1.05);
-} */
 
-.song-card .overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  padding: 10px;
-  box-sizing: border-box;
-}
+    &:hover {
+        transform: scale(1.05);
+    }
 
-.song-card h3 {
-  margin: 0 0 5px;
-  font-size: 1.1em;
-}
+    & .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 
-.song-card audio {
-  width: 100%;
-  outline: none;
+    & h3 {
+        margin: 0 0 5px;
+        font-size: 1.1em;
+    }
+
+    & audio {
+        width: 100%;
+        outline: none;
+    }
 }
