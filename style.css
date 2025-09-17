@@ -208,19 +208,19 @@
 
 
 
-.song-card {
+/* .song-card {
   position: relative;
   width: 300px;
   height: 260px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  background-size: cover;        /* Ye important hai image ko pura card me fit karne ke liye */
-  background-position: center;  /* Center position */
-  background-repeat: no-repeat; /* Image repeat nahi hogi */
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat; 
   transition: transform 0.3s ease;
   cursor: pointer;
-}
+} */
 
 .song-card:hover {
   transform: scale(1.05);
