@@ -2,21 +2,25 @@
   {
     "name": "Kesariya",
     "singer": "Arijit Singh",
+    "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
   },
   {
     "name": "Tum Hi Ho",
     "singer": "Arijit Singh",
+    "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
   },
   {
     "name": "Lehra Do",
     "singer": "Arijit Singh",
+    "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
   },
   {
     "name": "Believer",
     "singer": "Imagine Dragons",
+    "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
   }
 ]
