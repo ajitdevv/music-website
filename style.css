@@ -17,7 +17,7 @@
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 
-    /* btn */
+    
     --background-color2: linear-gradient(145deg, #24364e, #1e2a40);
     --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
         -5px -5px 12px rgba(255, 255, 255, 0.05);
@@ -26,7 +26,7 @@
 }
 
 .light {
-    /* search */
+   
     ---background--color-imp: linear-gradient(145deg,
             #8ec5fc,
             #e0c3fc,
@@ -39,7 +39,7 @@
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
         inset -4px -4px 8px rgba(255, 255, 255, 0.9);
 
-    /* btn */
+    
     --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
     ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
         -5px -5px 12px rgba(255, 255, 255, 0.6);
@@ -47,7 +47,7 @@
 
 }
 
-/* #home_page {
+#home_page {
     height: 100vh;
     position: relative;
     background: var(---background--color-imp);
@@ -56,7 +56,7 @@
     -moz-transition: background 0.5s ease;
     -ms-transition: background 0.5s ease;
     -o-transition: background 0.5s ease;
-} */
+}
 
 
 .search {
@@ -128,11 +128,28 @@
     left: 10px;
 
     & img {
-        width: 50px;
         height: 50px;
     }
 }
+.music{
+    position: absolute;
+    
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+/* background:linear-gradient(rgb(231, 146, 146),rgb(240, 192, 128),rgb(248, 229, 108),rgb(153, 243, 101),rgb(101, 106, 244)) ; */
+& audio{
+    width: 300px;
+    height: 300px;
 
+}
+& .music_card{
+    background-image: url(/wintages.jpg);
+    
+}
+}
 
 
 
