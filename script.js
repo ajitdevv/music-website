@@ -11,7 +11,7 @@ btn.addEventListener("click", function () {
     } else {
         document.body.classList.remove('light');
         document.body.classList.add('dark');
-        alert("Dark mode is activated");
+        alert("This his protect your eye's ");
     }
 });
 
