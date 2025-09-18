@@ -216,15 +216,15 @@ searchInput.addEventListener("input", () => {
 
 
 
-window.addEventListener('scroll', () => {
-    const bottomDiv = document.getElementById('viewmore');
+  function checkScroll() {
+    const scrollTop = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
 
-    // Check if user has scrolled to the bottom
-    const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
-
-    if (isAtBottom) {
-        bottomDiv.classList.remove('hidden');
+    // Show button only when scrolled to bottom & more songs left
+    if(scrollTop + windowHeight >= docHeight - 10 && displayedCount < allSongs.length){
+      viewmore.style.display = 'block';
     } else {
-        bottomDiv.classList.add('hidden');
+      viewmore.style.display = 'none';
     }
-});
+  }

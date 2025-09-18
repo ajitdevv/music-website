@@ -15,18 +15,18 @@
 
 /*! try it  */
 
-
-#viewmore{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 90%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+body{
+    position: relative;
 }
-.hidden {
+#viewmore{
+    
+    position: fixed;
+  /* left: 50%; */
+  bottom: 10px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.raj {
     display: none;
 }
 
