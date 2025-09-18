@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
-    
+
+
 }
 
 
@@ -15,17 +15,19 @@
 
 /*! try it  */
 
-body{
+body {
     position: relative;
 }
-#viewmore{
-    
+
+#viewmore {
+
     position: fixed;
-  /* left: 50%; */
-  bottom: 10px;
-  transform: translateX(-50%);
-  z-index: 1000;
+    /* left: 50%; */
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 1000;
 }
+
 .raj {
     display: none;
 }
@@ -113,7 +115,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-   
+
 }
 
 .h1 {
@@ -215,34 +217,7 @@ body{
     width: 70%;
 
 
-    /* & audio {
 
-        width: 280px;
-        height: 250px;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    } */
-
-    /* & .music_card {
-        
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  margin: 20px auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  position: relative;
-  overflow: hidden;
-
-
-
-    } */
 }
 
 
@@ -270,6 +245,7 @@ body{
     flex: 1 1 calc(33.33% - 20px);
     /* तीन गाने एक लाइन में */
     box-sizing: border-box;
+
 
 
     &:hover {
@@ -439,6 +415,7 @@ body{
 
 
 
+}
 
 
 
@@ -448,72 +425,101 @@ body{
 
 
 
+.song-card {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 
-    .song-card {
-        position: relative;
-        width: 300px;
-        height: 260px;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    & .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
         box-sizing: border-box;
-
-
-        &:hover {
-            transform: scale(1.05);
-        }
-
-        & .overlay {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        & h3 {
-            margin: 0 0 5px;
-            font-size: 1.1em;
-        }
-
-        & audio {
-            width: 100%;
-            outline: none;
-        }
     }
 
-    /***** Scorll bar *****/
-
-    ::-webkit-scrollbar {
-        width: 10px;
+    & h3 {
+        margin: 0 0 5px;
+        font-size: 1.1em;
     }
 
-    ::-webkit-scrollbar-track {
-        background: var(---hover--box-shadow2);
+    & audio {
+        width: 100%;
+        outline: none;
     }
+}
 
-    ::-webkit-scrollbar-thumb {
-        background: var(--primary-color);
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        /*opacity: 0.7;
-    */
+/***** Scorll bar *****/
 
-    }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-    ::-webkit-scrollbar:hover {
-        background: var(---btn--text-color);
-    }
+::-webkit-scrollbar-track {
+    background: var(---hover--box-shadow2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    opacity: 0.7;
+
+
+}
+
+::-webkit-scrollbar:hover {
+    /* background: var(---btn--text-color); */
+}
+
+
+
+
+
+
+
+
+/***remove it then this not work***/
+.glass-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
 }
