@@ -222,7 +222,7 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
     cursor: pointer;
-    flex: 1 1 calc(33.33% - 20px); /* तीन गाने एक लाइन में */
+    flex: 1 1 calc(33.33% - 200px); /* तीन गाने एक लाइन में */
   box-sizing: border-box;
 
 
