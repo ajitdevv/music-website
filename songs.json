@@ -65,5 +65,23 @@
     "singer": "Imagine Dragons",
     "image": "url(/wintages.jpg)",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758127034/2_Peg_Tere_Naam_Ke__Sunita_Baby_Dance__Latest_Haryanvi_Dance_2018_256k_qpxsk7.mp3"
+  },
+  {
+    "name": "Haseen",
+    "singer": "Talwiinder, NDS, Rippy Grewal",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758193373/HASEEN_-_TALWIINDER_NDS_RIPPY_Official_Visualizer_tb3pge.mp3"
+  },
+  {
+    "name": "Pal Pal",
+    "singer": "Afusic",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194099/Afusic_-_Pal_Pal_Official_Music_Video_Prod._AliSoomroMusic_cruwyk.mp3"
+  },
+  {
+    "name": "Sahiba",
+    "singer": "Aditya Rikhari, Ankita Chhetri",
+    "image": "url(/wintages.jpg)",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194447/Sahiba_Official_Music_Video_Aditya_Rikhari_Ankita_Chhetri_T-Series_lndvun.mp3"
   }
 ]
