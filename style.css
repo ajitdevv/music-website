@@ -28,11 +28,11 @@
 .dark {
 
     ---background--color-imp: linear-gradient(145deg,
-            #1e2a40,
-            #3a2b4f,
-            #2c2c2c,
-            #214447,
-            #2e443a);
+            #070707,
+            #afa671,
+            /*   #2c2c2c,
+            #214447, */
+            #8f7500);
     --background-color: linear-gradient(145deg, #1e2a40, #2c2c2c);
     --text-color: #f0f0f0;
     --primary-color: #1e90ff;
@@ -80,8 +80,20 @@
     -o-transition: background 0.5s ease;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
+.h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    font-weight: bold;
+    /* color: rgba(78, 234, 239, 0.411); */
+    color: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
 
 .search {
     position: absolute;
@@ -160,14 +172,13 @@
 .music {
     position: absolute;
     top: 58%;
-    width: 100%;
-    /* height: 10%; */
-
+    left: 15%;
     display: flex;
     justify-content: center;
+
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
+    width: 70%;
 
 
     /* & audio {
@@ -222,8 +233,9 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
     cursor: pointer;
-    flex: 1 1 calc(33.33% - 200px); /* तीन गाने एक लाइन में */
-  box-sizing: border-box;
+    flex: 1 1 calc(33.33% - 20px);
+    /* तीन गाने एक लाइन में */
+    box-sizing: border-box;
 
 
     &:hover {
@@ -248,5 +260,254 @@
     & audio {
         width: 100%;
         outline: none;
+    }
+}
+
+/***** Scorll bar *****/
+
+::-webkit-scrollbar {
+    width: 10px;
+
+
+    &-track {
+        background: var(---hover--box-shadow2);
+    }
+
+
+    &-thumb {
+        background: var(--primary-color);
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        /* opacity: 0.7; */
+    }
+
+    &:hover {
+        background: var(---btn--text-color);
+    }
+}
+
+@media (max-width: 768px) {
+    #home_page {
+        height: 100vh;
+        position: relative;
+        background: var(---background--color-imp);
+        transition: background 0.5s ease;
+        -webkit-transition: background 0.5s ease;
+        -moz-transition: background 0.5s ease;
+        -ms-transition: background 0.5s ease;
+        -o-transition: background 0.5s ease;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+
+    .h1 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        font-weight: bold;
+        /* color: rgba(78, 234, 239, 0.411); */
+        color: rgba(0, 0, 0, 0.4);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--background-color);
+        padding: 12px 18px;
+        border-radius: 40px;
+        max-width: 18rem;
+        box-shadow: var(--box-shadow);
+
+        &:hover {
+
+
+
+
+            box-shadow: var(---hover--box-shadow2);
+        }
+
+        & input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 15px;
+            width: 100%;
+            color: var(--text-color);
+        }
+    }
+
+
+
+    .btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .btnn {
+        text-transform: capitalize;
+        font: 500 10px Arial, sans-serif;
+        border: none;
+        outline: none;
+        background: var(--background-color2);
+        color: var(---btn--text-color);
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+
+
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+
+
+        &:hover {
+            box-shadow: var(---hover--box-shadow2);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+
+
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        & img {
+            height: 50px;
+        }
+    }
+
+
+    .music {
+        position: absolute;
+        top: 58%;
+        left: 15%;
+        display: grid;
+        justify-content: center;
+        grid-column: 1fr 1fr;
+        flex-wrap: wrap;
+
+        width: 70%;
+
+    }
+
+    /* & audio {
+
+        width: 280px;
+        height: 250px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    } */
+
+    /* & .music_card {
+        
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+
+
+
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+    .song-card {
+        position: relative;
+        width: 300px;
+        height: 260px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        & .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        & h3 {
+            margin: 0 0 5px;
+            font-size: 1.1em;
+        }
+
+        & audio {
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    /***** Scorll bar *****/
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(---hover--box-shadow2);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        /*opacity: 0.7;
+    */
+
+    }
+
+    ::-webkit-scrollbar:hover {
+        background: var(---btn--text-color);
     }
 }
