@@ -2,7 +2,39 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
+    
 }
+
+
+
+
+
+
+
+
+/*! try it  */
+
+
+#viewmore{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
 
 /* .dark{
     
@@ -81,6 +113,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+   
 }
 
 .h1 {
@@ -157,6 +190,7 @@
 
     }
 }
+
 
 .logo {
     position: absolute;
@@ -403,34 +437,6 @@
 
     }
 
-    /* & audio {
-
-        width: 280px;
-        height: 250px;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    } */
-
-    /* & .music_card {
-        
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  margin: 20px auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  position: relative;
-  overflow: hidden;
-
-
-
-    } */
 
 
 

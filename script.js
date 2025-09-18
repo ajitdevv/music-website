@@ -207,3 +207,24 @@ searchInput.addEventListener("input", () => {
     );
     renderSongs(filtered);
 });
+
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', () => {
+    const bottomDiv = document.getElementById('viewmore');
+
+    // Check if user has scrolled to the bottom
+    const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+
+    if (isAtBottom) {
+        bottomDiv.classList.remove('hidden');
+    } else {
+        bottomDiv.classList.add('hidden');
+    }
+});
