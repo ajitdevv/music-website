@@ -2,6 +2,8 @@
 
 
 
+//***** Theme chang *****//
+
 
 let btn = document.querySelector(".btnn");
 btn.addEventListener("click", function () {
@@ -15,6 +17,9 @@ btn.addEventListener("click", function () {
     }
 });
 
+
+
+//***** Song search *****//
 
 const container = document.getElementsByClassName("music")[0];
 const searchInput = document.getElementsByClassName("search_input")[0];
@@ -48,7 +53,7 @@ function renderSongs(songList) {
         overlay.className = "overlay";
 
         const title = document.createElement("h3");
-        title.textContent = `${song.name} — ${song.singer}`;
+        title.textContent = `${song.name} -— ${song.singer}`;
 
         const audio = document.createElement("audio");
         audio.controls = true;
@@ -66,7 +71,8 @@ searchInput.addEventListener("input", () => {
     const query = searchInput.value.toLowerCase();
     const filtered = allSongs.filter(song =>
         song.name.toLowerCase().includes(query) ||
-        song.singer.toLowerCase().includes(query)
+        song.singer.toLowerCase().includes(query) ||
+        song.other.toLowerCase().includes(query)
     );
     renderSongs(filtered);
 });

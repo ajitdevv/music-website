@@ -2,85 +2,98 @@
   {
     "name": "STFU",
     "singer": "AP Dhillon Shinda Kahlon",
-    
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211179/stfu_ofplsa.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758135305/AP_dhillon_Songs_SlowedReverb_MAYUR_lofi_maker_fap6dd.mp3"
   },
   {
     "name": "Bulleya",
     "singer": "Papon",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211181/Bulleya_mmkryk.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134703/Bulleya_Full_Song_Sultan_Salman_Khan_Anushka_Sharma_Papon_Vishal_Shekhar_Irshad_Kamil_ko8vzp.mp3"
   },
   {
     "name": "Deewaniyat",
     "singer": "Vishal Mishra",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211184/Deewaniyat_Vishal_Mishra_zob3hw.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134876/DEEWANIYAT_Title_Track_-_Ek_Deewane_Ki_Deewaniyat_Harshvardhan_Sonam_Vishal_KaushikGudduKunaal_i8trld.mp3"
   },
   {
     "name": "Finding Her (Jana Mere Sawalon Ka Manzar Tu)",
     "singer": "Kushagra",
+    "other": "love,emosnal,new",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211163/Finding_Her_Jana_Mere_Sawalon_Ka_Manzar_Tu_Kushagra_dxw6ig.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134759/Finding_Her_Jana_Mere_Sawalon_Ka_Manzar_Tu_Kushagra_Vanshika_Bharath_Karan_Maini_UR_Debut_ejxaqx.mp3"
   },
   {
     "name": "Jhol",
     "singer": "Maanu & Annural Khalid",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211183/Jhol_Maanu_Annural_Khalid_uleik5.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134757/Maanu_Annural_Khalid_-_Jhol_Lyrics_uvh0it.mp3"
   },
   {
     "name": "MASHOOQA",
     "singer": "Yo Yo Honey Singh, Charmee Zaveri (debut), Pho (vocals)",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211165/MASHOOQA_gd5htc.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134831/MASHOOQA_Official_Video_Yo_Yo_Honey_Singh_Charmee_Zaveri_Pho_mrv4ha.mp3"
   },
   {
     "name": "Naam Chale",
     "singer": "Vikram Sarkar",
+    "other": "haryanvi,new,vikram",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211176/Naam_Chale_Vikram_Sarkar_dk4es7.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134796/Naam_Chale_Official_Video_Vikram_Sarkar_New_Haryanvi_Songs_Haryanavi_2025_Latest_Haryanvi_Songs_yzaoyl.mp3"
   },
   {
     "name": "Raatan Jag Jag Ke Mehnta Ne Kitiya",
     "singer": "AP Dhillon",
+    "other": "motivesion,new,haryanvi",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211172/Raatan_Jag_Jag_Ke_Mehnta_Ne_Kitiya_AP_Dhillon_c2zqtw.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134934/Raatan_Jag_Jag_Ke_Mehnta_Ne_Kitiya_Official_Video_AP_Dhillon_Top_Boys_Latest_Punjabi_Song_2025_ieaxbb.mp3"
   },
   {
     "name": "Sabhi Khas",
     "singer": "Sumit Parta",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211173/Sabhi_Khas_Sumit_Parta_aoligw.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758135030/Sabhi_Khas_Sumit_Parta_Aaj_Sabhi_Khas_Lekin_Mere_Past_Me_Ni_The_New_Haryanvi_Song_2025_gndfb6.mp3"
   },
   {
-    "name": "Shaky new song",
+    "name": "Shaky song",
     "singer": "Sanju Rathod",
+    "other": "new,love,lofi",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211183/Shaky_new_song_Sanju_Rathod_an0yje.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758134917/Shaky_Official_Video_Sanju_Rathod_Ft._Isha_Malviya_G-Spark_New_Marathi_Songs_2025_ap0skw.mp3"
   },
   {
     "name": "Believer",
     "singer": "Imagine Dragons",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211159/believer_odvm6e.jpg",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758212875/Imagine_Dragons_-_Believer_Lyrics_fpl6qb.mp3"
   },
   {
     "name": "Haseen",
     "singer": "Talwiinder, NDS, Rippy Grewal",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211168/Haseen_Talwiinder_NDS_Rippy_Grewal_tvmfpx.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758193373/HASEEN_-_TALWIINDER_NDS_RIPPY_Official_Visualizer_tb3pge.mp3"
   },
   {
     "name": "Pal Pal",
     "singer": "Afusic",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211170/Pal_Pal_Afusic_artvwh.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194099/Afusic_-_Pal_Pal_Official_Music_Video_Prod._AliSoomroMusic_cruwyk.mp3"
   },
   {
     "name": "Sahiba",
     "singer": "Aditya Rikhari, Ankita Chhetri",
+    "other": "dev",
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211183/Sahiba_Aditya_Rikhari_Ankita_Chhetri_hks48p.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194447/Sahiba_Official_Music_Video_Aditya_Rikhari_Ankita_Chhetri_T-Series_lndvun.mp3"
   }
