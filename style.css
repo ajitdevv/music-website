@@ -98,9 +98,45 @@
     transform: translateX(-50%);
     font-size: 4rem;
     font-weight: bold;
-    /* color: rgba(78, 234, 239, 0.411); */
     color: rgba(0, 0, 0, 0.4);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+    &::before {
+        content: "10000++Songs";
+
+        top: 0;
+        left: 0;
+        /*transform: translateX(-50%);
+        */
+        position: absolute;
+        /*width: 100%;
+        */
+        /*padding: 0.55rem 1.125rem;
+        */
+        /*font-size: 1.5rem;
+        */
+        border-right: 2px solid black;
+        overflow: hidden;
+        animation: animation 2s linear infinite;
+        -webkit-animation: animation 2s linear infinite;
+    }
+}
+
+@keyframes animation {
+    0% {
+        width: 0;
+
+    }
+
+    50% {
+        width: 100%;
+
+    }
+
+    100% {
+        width: 0;
+    }
+
 }
 
 .search {
@@ -134,7 +170,10 @@
         font-size: 1.2rem;
         width: 100%;
         color: var(--text-color);
+
+
     }
+
 }
 
 
@@ -158,14 +197,14 @@
     outline: none;
     background: var(--background-color2);
     color: var(--text-color) !important;
-    
+
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
 
 
-    /* box-shadow: var(--box-shadow); */
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 
 
@@ -177,32 +216,6 @@
 
     }
 }
-
-/* .btnn {
-    text-transform: capitalize;
-    font: 500 0.625rem Arial, sans-serif;
-    border: none;
-    outline: none;
-    background: var(--background-color2);
-    color: var(--text-color);
-    padding: .625rem 1.25rem;
-    border-radius: .625rem;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: var(--box-shadow);
-    transition: all 0.3s ease;
-    -webkit-border-radius: .625rem;
-    -moz-border-radius: .625rem;
-    -ms-border-radius: .625rem;
-    -o-border-radius: .625rem;
-
-
-    &:hover {
-        box-shadow: var(---hover--box-shadow2);
-        transform: translateY(-2px);
-        transition: all 0.3s ease;
-    }
-} */
 
 
 .logo {
@@ -260,7 +273,7 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    opacity: 1;
+
 
 
 
@@ -313,7 +326,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     #home_page {
         height: 100vh;
         position: relative;
@@ -326,6 +339,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         overflow-x: hidden;
+
     }
 
     .h1 {
@@ -335,26 +349,64 @@
         transform: translateX(-50%);
         font-size: 2rem;
         font-weight: bold;
-        /* color: rgba(78, 234, 239, 0.411); */
         color: rgba(0, 0, 0, 0.4);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+
+        &::before {
+            content: "10000++Songs";
+
+            top: 0;
+            left: 0;
+            position: absolute;
+
+            border-right: 2px solid black;
+            overflow: hidden;
+            animation: animation 2s linear infinite;
+            -webkit-animation: animation 2s linear infinite;
+        }
     }
+
+    /* @keyframes animation {
+        0% {
+            width: 0;
+
+        }
+
+        50% {
+            width: 100%;
+
+        }
+
+        100% {
+            width: 0;
+        }
+
+    } */
 
     .search {
         position: absolute;
-        top: 50%;
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: var(--background-color);
-        padding: 12px 18px;
-        border-radius: 40px;
-        max-width: 18rem;
+        padding: 0.75rem 1.125rem;
+
+        width: 15.5rem;
         box-shadow: var(--box-shadow);
+        border-radius: 2.5rem;
+        -webkit-border-radius: 2.5rem;
+        -moz-border-radius: 2.5rem;
+        -ms-border-radius: 2.5rem;
+        -o-border-radius: 2.5rem;
+
+
+
 
         &:hover {
-
-
-
 
             box-shadow: var(---hover--box-shadow2);
         }
@@ -363,19 +415,28 @@
             border: none;
             outline: none;
             background: transparent;
-            font-size: 15px;
+            font-size: 1.2rem;
             width: 100%;
             color: var(--text-color);
+
+
         }
+
     }
 
 
 
     .btn {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 1rem;
+        right: .5rem;
     }
+
+
+
+
+
+
 
     .btnn {
         text-transform: capitalize;
@@ -384,6 +445,7 @@
         outline: none;
         background: var(--background-color2);
         color: var(--text-color) !important;
+
         padding: 10px 20px;
         border-radius: 10px;
         cursor: pointer;
@@ -403,33 +465,30 @@
         }
     }
 
+
     .logo {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        /* top: 0.625rem; */
+        top: .75rem;
+        left: .5rem;
 
         & img {
-            height: 50px;
+            height: 3rem;
         }
     }
 
 
     .music {
         position: absolute;
-        top: 58%;
+        top: 50%;
         left: 15%;
         display: grid;
-        justify-content: center;
-        grid-column: 1fr 1fr;
-        flex-wrap: wrap;
-
+        grid-template-columns: 1fr;
         width: 70%;
-
     }
 
 
 
-}
 
 
 
@@ -437,79 +496,80 @@
 
 
 
+    /**** Song-card ****/
+    .song-card {
+        position: relative;
+        width: 18.75rem;
+        height: 16.25rem;
 
-
-.song-card {
-    position: relative;
-    width: 300px;
-    height: 260px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-
-
-    &:hover {
-        transform: scale(1.05);
-    }
-
-    & .overlay {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
+        overflow: hidden;
+        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+        cursor: pointer;
         box-sizing: border-box;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+
+
+
+
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        & .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: .625rem;
+            box-sizing: border-box;
+        }
+
+        & h3 {
+            margin: 0 0 5px;
+            font-size: 1.1em;
+        }
+
+        & audio {
+            width: 100%;
+            outline: none;
+        }
     }
 
-    & h3 {
-        margin: 0 0 5px;
-        font-size: 1.1em;
+    /***** Scorll bar *****/
+
+    ::-webkit-scrollbar {
+        width: 10px;
+
+       
+
+
+
+        &:hover {
+            background: var(---btn--text-color);
+        }
     }
-
-    & audio {
-        width: 100%;
-        outline: none;
-    }
-
-}
-
-/***** Scorll bar *****/
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(---hover--box-shadow2);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    opacity: 0.7;
-
-
-}
-
-::-webkit-scrollbar:hover {
-    /* background: var(---btn--text-color); */
 }
 
 
-
+ ::-webkit-scrollbar-thumb {
+            color: var(--primary-color);
+            border-radius: 3.125rem;
+            -webkit-border-radius: 3.125rem;
+            -moz-border-radius: 3.125rem;
+            -ms-border-radius: 3.125rem;
+            -o-border-radius: 3.125rem;
+        
+        }
 
 
 

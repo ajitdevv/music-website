@@ -13,7 +13,7 @@ btn.addEventListener("click", function () {
     } else {
         document.body.classList.remove('light');
         document.body.classList.add('dark');
-        alert("This his protect your eye's ");
+        alert("Look like paid website");
     }
 });
 
