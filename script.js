@@ -32,7 +32,7 @@ fetch("songs.json")
     .then(data => {
         allSongs = data;
         const randomThree = getRandomSongs(allSongs, 3);
-        renderSongs(randomThree);  
+        renderSongs(randomThree);
     });
 
 
@@ -41,13 +41,17 @@ function getRandomSongs(arr, n) {
     return shuffled.slice(0, n);
 }
 
+ 
+
+
+
 
 function renderSongs(songList) {
-    container.innerHTML = "";  
+    container.innerHTML = "";
     songList.forEach(song => {
         const card = document.createElement("div");
         card.className = "song-card";
-        card.style.backgroundImage = `url(${song.image})`; 
+        card.style.backgroundImage = `url(${song.image})`;
 
         const overlay = document.createElement("div");
         overlay.className = "overlay";
@@ -74,8 +78,12 @@ searchInput.addEventListener("input", () => {
         song.singer.toLowerCase().includes(query) ||
         song.other.toLowerCase().includes(query)
     );
+
     renderSongs(filtered);
+    
 });
+    
+ 
 
 
 
@@ -83,6 +91,3 @@ searchInput.addEventListener("input", () => {
 
 
 
-
-
-  
