@@ -576,3 +576,132 @@
 
 
 /***remove it then this not work***/
+
+
+
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+header nav a {
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.features .feature {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+.features .feature:hover {
+  transform: translateY(-5px);
+}
+
+.features .feature h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  padding: 40px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
