@@ -85,10 +85,10 @@
 
 
 
-// // === DOM Elements ===
-// const container = document.querySelector(".music");
-// const nowPlaying = document.getElementById("now-playing");
-// const searchInput = document.querySelector(".search_input");
+// === DOM Elements ===
+const container = document.querySelector(".music");
+const nowPlaying = document.getElementById("now-playing");
+const searchInput = document.querySelector(".search_input");
 
 // // === Global State ===
 // let allSongs = [];
