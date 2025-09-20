@@ -106,37 +106,37 @@ function renderSongs(songList) {
     });
 }
 
-// // === Create Each Song Card ===
-// function createSongCard(song) {
-//     const card = document.createElement("div");
-//     card.className = "song-card";
-//     card.style.backgroundImage = `url(${song.image})`;
-//     card.style.padding = "20px";
-//     card.style.margin = "10px";
-//     card.style.backgroundSize = "cover";
-//     card.style.color = "#fff";
+// === Create Each Song Card === //
+function createSongCard(song) {
+    const card = document.createElement("div");
+    card.className = "song-card";
+    card.style.backgroundImage = `url(${song.image})`;
+    card.style.padding = "20px";
+    card.style.margin = "10px";
+    card.style.backgroundSize = "cover";
+    card.style.color = "#fff";
 
-//     const overlay = document.createElement("div");
-//     overlay.className = "overlay";
-//     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-//     overlay.style.padding = "10px";
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    overlay.style.padding = "10px";
 
-//     const title = document.createElement("h3");
-//     title.textContent = `${song.name} — ${song.singer}`;
+    const title = document.createElement("h3");
+    title.textContent = `${song.name} — ${song.singer}`;
 
-//     const audio = document.createElement("audio");
-//     audio.src = song.src;
+    const audio = document.createElement("audio");
+    audio.src = song.src;
 
-//     const playBtn = document.createElement("button");
-//     playBtn.textContent = "▶️ Play";
+    const playBtn = document.createElement("button");
+    playBtn.textContent = "▶️ Play";
 
-//     playBtn.addEventListener("click", () => handlePlayPause(audio, playBtn, song));
+    playBtn.addEventListener("click", () => handlePlayPause(audio, playBtn, song));
 
-//     audio.addEventListener("ended", () => {
-//         playBtn.textContent = "▶️ Play";
-//         nowPlaying.textContent = "";
-//         currentAudio = null;
-//     });
+    audio.addEventListener("ended", () => {
+        playBtn.textContent = "▶️ Play";
+        nowPlaying.textContent = "";
+        currentAudio = null;
+    });
 
 //     const favBtn = document.createElement("button");
 //     const isFav = favorites.includes(song.name);
