@@ -95,23 +95,16 @@ let allSongs = [];
 let currentAudio = null;
 let favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || [];
 
-// // === Fetch Songs from songs.json ===
-// fetch("songs.json")
-//     .then(res => res.json())
-//     .then(data => {
-//         allSongs = data;
-//         renderSongs(allSongs);
-//     });
 
-// // === Render Songs Function ===
-// function renderSongs(songList) {
-//     container.innerHTML = "";
+// === Render Songs Function ===
+function renderSongs(songList) {
+    container.innerHTML = "";
 
-//     songList.forEach(song => {
-//         const card = createSongCard(song);
-//         container.appendChild(card);
-//     });
-// }
+    songList.forEach(song => {
+        const card = createSongCard(song);
+        container.appendChild(card);
+    });
+}
 
 // // === Create Each Song Card ===
 // function createSongCard(song) {
