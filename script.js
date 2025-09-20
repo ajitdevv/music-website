@@ -90,10 +90,10 @@ const container = document.querySelector(".music");
 const nowPlaying = document.getElementById("now-playing");
 const searchInput = document.querySelector(".search_input");
 
-// // === Global State ===
-// let allSongs = [];
-// let currentAudio = null;
-// let favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || [];
+// === Global State ===
+let allSongs = [];
+let currentAudio = null;
+let favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || [];
 
 // // === Fetch Songs from songs.json ===
 // fetch("songs.json")
