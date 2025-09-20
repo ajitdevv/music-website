@@ -186,16 +186,16 @@ function handlePlayPause(audio, button, song) {
 //     localStorage.setItem("favoriteSongs", JSON.stringify(favorites));
 // }
 
-// // === Search Feature ===
-// searchInput.addEventListener("input", () => {
-//     const query = searchInput.value.toLowerCase();
-//     const filtered = allSongs.filter(song =>
-//         song.name.toLowerCase().includes(query) ||
-//         song.singer.toLowerCase().includes(query) ||
-//         song.other.toLowerCase().includes(query)
-//     );
-//     renderSongs(filtered);
-// });
+// === Search Feature ===
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    const filtered = allSongs.filter(song =>
+        song.name.toLowerCase().includes(query) ||
+        song.singer.toLowerCase().includes(query) ||
+        song.other.toLowerCase().includes(query)
+    );
+    renderSongs(filtered);
+});
 
 
 
