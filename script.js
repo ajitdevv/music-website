@@ -138,19 +138,19 @@ function createSongCard(song) {
         currentAudio = null;
     });
 
-//     const favBtn = document.createElement("button");
-//     const isFav = favorites.includes(song.name);
-//     favBtn.textContent = isFav ? "💔 Remove Favorite" : "❤️ Add to Favorite";
+    const favBtn = document.createElement("button");
+    const isFav = favorites.includes(song.name);
+    favBtn.textContent = isFav ? "💔 Remove Favorite" : "❤️ Add to Favorite";
 
-//     favBtn.addEventListener("click", () => toggleFavorite(song, favBtn));
+    favBtn.addEventListener("click", () => toggleFavorite(song, favBtn));
 
-//     overlay.appendChild(title);
-//     overlay.appendChild(playBtn);
-//     overlay.appendChild(favBtn);
-//     card.appendChild(overlay);
+    overlay.appendChild(title);
+    overlay.appendChild(playBtn);
+    overlay.appendChild(favBtn);
+    card.appendChild(overlay);
 
-//     return card;
-// }
+    return card;
+}
 
 // // === Handle Play/Pause ===
 // function handlePlayPause(audio, button, song) {
