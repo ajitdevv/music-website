@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+ user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
 
 }
 
@@ -11,7 +14,7 @@
     ---background--color-imp: linear-gradient(145deg, #1e2a40, #ffaa00, rgb(32, 31, 27), rgb(29, 19, 3));
     --background-color: linear-gradient(145deg, #7a5f20, #2c2c2cb5);
     --text-color: #c3c1c1;
-    --primary-color: rgba(214, 192, 49, 0.56);
+    --primary-color: rgba(255, 221, 0, 0.918);
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 
@@ -47,6 +50,7 @@
 }
 
 #home_page {
+    z-index: 1;
     height: 100vh;
     position: relative;
     background: var(---background--color-imp);
@@ -58,6 +62,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+
+    & .nav_bar {
+        position: absolute;
+        top: 1.325rem;
+        left: 33.19%;
+
+        & .ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1.49rem;
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+
+                & li {
+                    font-size: 20px;
+                    color: var(--primary-color);
+                    font-family: 'Comic Sans MS', cursive, sans-serif; }
+            }
+
+        }
+    }
 
 }
 
@@ -73,30 +100,34 @@
 
 .btn {
     position: absolute;
-    top: 0.925rem;
+    top: 0.525rem;
     right: 11.6875rem;
+    /* width: 47px;
+    height: 54px; */
+
 }
 
+
 .theme-chang {
-    text-transform: capitalize;
-    font: 600 10px Arial, sans-serif;
+    /* text-transform: capitalize; */
+    /* font: 600 10px Arial, sans-serif; */
     border: none;
-    outline: none;
-    background: var(--background-color2);
-    color: var(--text-color) !important;
+    /* outline: none; */
+    /* background: var(--background-color2); */
+    /* color: var(--text-color) !important; */
 
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 30px;
 
 
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     transition: all 0.3s ease;
-
+    background: transparent;
 
     &:hover {
-        box-shadow: var(---hover--box-shadow2);
+        /* box-shadow: var(---hover--box-shadow2); */
         transform: translateY(-2px);
         transition: all 0.3s ease;
 
@@ -270,9 +301,6 @@
         background: var(---btn--text-color);
     }
 }
-
-
-
 
 
 

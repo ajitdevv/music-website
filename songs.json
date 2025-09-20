@@ -104,6 +104,14 @@
     "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758270012/Ishq_Bulaava_-_Lyrical_Song_Hasee_Toh_Phasee_Sidharth_Parineeti_Vishal_Shekhar_Love_Songsp_nfp4lb.webp",
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758269574/Ishq_Bulaava_-_Lyrical_Song_Hasee_Toh_Phasee_Sidharth_Parineeti_Vishal_Shekhar_Love_Songs_i4hcdb.mp3"
   },
+ 
+  {
+    "name": "Sahiba",
+    "singer": "Aditya Rikhari, Ankita Chhetri",
+    "other": "dev",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211183/Sahiba_Aditya_Rikhari_Ankita_Chhetri_hks48p.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194447/Sahiba_Official_Music_Video_Aditya_Rikhari_Ankita_Chhetri_T-Series_lndvun.mp3"
+  },
   {
     "name": "Jeene Laga Hoon",
     "singer": "Atif Aslam or Shreya Ghoshal",
@@ -112,10 +120,52 @@
     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758269732/Jeene_Laga_Hoon_Lyrical_-_Ramaiya_VastavaiyaGirish_Kumar_Shruti_Haasan_Atif_Aslam_Shreya_Ghoshal_qvfu7f.mp3"
   },
   {
-    "name": "Sahiba",
-    "singer": "Aditya Rikhari, Ankita Chhetri",
-    "other": "dev",
-    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758211183/Sahiba_Aditya_Rikhari_Ankita_Chhetri_hks48p.webp",
-    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758194447/Sahiba_Official_Music_Video_Aditya_Rikhari_Ankita_Chhetri_T-Series_lndvun.mp3"
+    "name": "Bagdi Bars",
+    "singer": "NitU+2011C Nakhrala",
+    "other": "Rajasthani , new",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368484/BAGDI_BARS_Official_Video_-_Nit-C_Nakhrala_New_Rajasthani_Bagdi_Songs_20251_ur019j.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367252/BAGDI_BARS_Official_Video_-_Nit-C_Nakhrala_New_Rajasthani_Bagdi_Songs_2025_ti9sxr.mp3"
+  },
+  {
+    "name": "Bebe Bapu",
+    "singer": "Ekam Chanoli, Akash Jandu, aur Singhjeet",
+    "other": "Punjabi,new,energetic",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368486/Bebe_Bapu_Official_Audio_Ekam_Chanoli_Singhjeet_Jass_Records_New_Punjabi_Songs_20251_yghzbn.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367384/Bebe_Bapu_Official_Audio_Ekam_Chanoli_Singhjeet_Jass_Records_New_Punjabi_Songs_2025_29_mnio8m.mp3"
+  },
+  {
+    "name": "Flexx",
+    "singer": "Nit C Nakhrala",
+    "other": "Hindi , Rajasthani,rap / hip‑hop",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368489/Flexx_Nit-C_Nakhrala_Rajwadi_Rifle_Suresh_Sirvi_Mraimdy_New_Hindi_Rajasthani_Rap_Songs_20241_bqpof5.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367509/Flexx_Nit-C_Nakhrala_Rajwadi_Rifle_Suresh_Sirvi_Mraimdy_New_Hindi_Rajasthani_Rap_Songs_2024_woht7c.mp3"
+  },
+  {
+    "name": "Rajasthan Nakhralo",
+    "singer": "Nit‑C Nakhrala",
+    "other": "Hindi , Rajasthani,rap / hip‑hop",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368491/RAJASTHAN_NAKHRALO_Nit-C_Nakhrala_New_Rajasthani_Rap_Songs_20221_qm1q1w.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367668/RAJASTHAN_NAKHRALO_Nit-C_Nakhrala_New_Rajasthani_Rap_Songs_2022_cs671m.mp3"
+  },
+  {
+    "name": "Yaar Haryane Te",
+    "singer": "KD Khasa Aala Chahar",
+    "other": "Haryanvi, hip‑hop , desi style mix patriotic, pride for Haryana",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368492/Yaar_Haryane_Te_Official_Video_Khasa_Aala_Chahar_ft._KD_Haryanvi_Songs_Speed_Records1_vfthst.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367691/Yaar_Haryane_Te_Official_Video_Khasa_Aala_Chahar_ft._KD_Haryanvi_Songs_Speed_Records_cc8zsk.mp3"
+  },
+  {
+    "name": "Yaari",
+    "singer": "Masoom Sharma ft. Rohit Lamba & Vinay Yadav",
+    "other": "Haryanvi, BGM‑style typical of Haryanvi songs; mood “yaari” (friendship) oriented",
+    "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758368536/Yaari_Official_Video_Masoom_Sharma_Rohit_Lamba_Vinay_Yadav_New_Haryanvi_Songs_Haryanavi_20251_qvl60j.webp",
+    "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758367699/Yaari_Official_Video_Masoom_Sharma_Rohit_Lamba_Vinay_Yadav_New_Haryanvi_Songs_Haryanavi_2025_g4ldl3.mp3"
+  },
+  {
+    "name": "Bebe Bapu",
+    "singer": "Harsh Likhari ft. Vagish",
+    "other": "Punjabi , Punjabi rap , Hip-Hop,maabaap",
+     "src": "https://res.cloudinary.com/djl1swpiu/video/upload/v1758368482/Harsh_Likhari_-_Bebe_Bapu_Vagish_Harf_Kambo_Official_Video_c7hrid.mp3"
+ 
   }
 ]
