@@ -152,27 +152,27 @@ function createSongCard(song) {
     return card;
 }
 
-// // === Handle Play/Pause ===
-// function handlePlayPause(audio, button, song) {
-//     if (currentAudio && currentAudio !== audio) {
-//         currentAudio.pause();
-//         currentAudio.currentTime = 0;
-//         currentAudio.btn.textContent = "▶️ Play";
-//     }
+// === Handle Play/Pause ===
+function handlePlayPause(audio, button, song) {
+    if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentAudio.btn.textContent = "▶️ Play";
+    }
 
-//     if (audio.paused) {
-//         audio.play();
-//         button.textContent = "⏸ Pause";
-//         nowPlaying.textContent = `Now Playing: ${song.name} — ${song.singer}`;
-//         currentAudio = audio;
-//         currentAudio.btn = button;
-//     } else {
-//         audio.pause();
-//         button.textContent = "▶️ Play";
-//         nowPlaying.textContent = "";
-//         currentAudio = null;
-//     }
-// }
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "⏸ Pause";
+        nowPlaying.textContent = `Now Playing: ${song.name} — ${song.singer}`;
+        currentAudio = audio;
+        currentAudio.btn = button;
+    } else {
+        audio.pause();
+        button.textContent = "▶️ Play";
+        nowPlaying.textContent = "";
+        currentAudio = null;
+    }
+}
 
 // // === Toggle Favorite ===
 // function toggleFavorite(song, button) {
