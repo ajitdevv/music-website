@@ -174,17 +174,17 @@ function handlePlayPause(audio, button, song) {
     }
 }
 
-// // === Toggle Favorite ===
-// function toggleFavorite(song, button) {
-//     if (favorites.includes(song.name)) {
-//         favorites = favorites.filter(fav => fav !== song.name);
-//         button.textContent = "❤️ Add to Favorite";
-//     } else {
-//         favorites.push(song.name);
-//         button.textContent = "💔 Remove Favorite";
-//     }
-//     localStorage.setItem("favoriteSongs", JSON.stringify(favorites));
-// }
+// === Toggle Favorite ===
+function toggleFavorite(song, button) {
+    if (favorites.includes(song.name)) {
+        favorites = favorites.filter(fav => fav !== song.name);
+        button.textContent = "❤️ Add to Favorite";
+    } else {
+        favorites.push(song.name);
+        button.textContent = "💔 Remove Favorite";
+    }
+    localStorage.setItem("favoriteSongs", JSON.stringify(favorites));
+}
 
 // === Search Feature ===
 searchInput.addEventListener("input", () => {
