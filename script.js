@@ -82,3 +82,29 @@ searchInput.addEventListener("input", () => {
     renderSongs(filtered);
 
 });
+
+
+ 
+// ********This code run only for (<= 780px) ********//
+function checkScreenSize() {
+  const raju = document.getElementsByClassName("ul");  // collection milti hai
+
+  if (window.innerWidth <= 780) {
+    // Sab elements pe display:none lagao
+    for(let i = 0; i < raju.length; i++) {
+      raju[i].style.display = "none";
+    }
+  } else {
+    // Screen badi ho toh wapas display set karo (default: block ya inline block aapke HTML ke hisab se)
+    for(let i = 0; i < raju.length; i++) {
+      raju[i].style.display = "";  // empty string matlab CSS file ya default style follow hoga
+    }
+  }
+}
+
+// Page load par check karo
+checkScreenSize();
+
+// Screen resize hone par bhi check karo
+window.addEventListener('resize', checkScreenSize);
+
