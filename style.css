@@ -109,7 +109,7 @@
 
 }
 
-.btn-smart {
+.menu {
     display: none;
 }
 
@@ -150,7 +150,7 @@
         content: "10000++Songs";
         top: 0;
         left: 0;
-      
+
         position: absolute;
         width: 100%;
         /*padding: 0.55rem 1.125rem;
@@ -222,7 +222,7 @@
     display: flex;
     justify-content: center;
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1.25rem;
     width: 70%;
 
@@ -243,7 +243,8 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
     cursor: pointer;
-    flex: 1 1 calc(33.33% - 20px);
+    display: flex;
+    flex: 1 1 calc(33.33% - 20px) !important;
     box-sizing: border-box;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -323,10 +324,79 @@
 
     }
 
-    .btn-smart {
-        font-size: 30px;
-        display: flex;
+    .nav_bar,
+    .btn {
+        display: none;
     }
+
+    .menu {
+        width: 145px;
+        display: block;
+        /*position: absolute;
+        */
+        /*display: flex;
+        */
+        /*top: .95rem;
+        */
+        /*right: .35rem;
+        */
+        cursor: pointer;
+        font-size: 30px;
+        transform: translate(275px, .95rem);
+        -webkit-transform: translate(275px, .95rem);
+        -moz-transform: translate(275px, .95rem);
+        -ms-transform: translate(275px, .95rem);
+        -o-transform: translate(275px, .95rem);
+
+        position: fixed;
+
+        z-index: 1;
+
+
+        & .menu-smart {
+            padding-right: 5px;
+            display: flex;
+            justify-content: flex-end;
+            border: none;
+            outline: none;
+            /* background-color: #1e8fff5e; */
+        }
+
+        & #menu-list {
+            /* background-color:var(--primary-color); */
+            background-color: #1e8fff5e;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            /* opacity: .7; */
+            & .ul {
+                right: .35rem;
+                margin-top: 5px;
+                padding: 15px;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+
+            }
+
+            li {
+                font-family: 'Comic Sans MS', cursive, sans-serif;
+                list-style: none;
+
+
+            }
+
+
+
+        }
+    }
+
+
 
     .h1 {
         position: absolute;
@@ -357,49 +427,18 @@
     }
 
     .logo {
-        position: absolute;
+
+        /* position: absolute; */
+        position: fixed;
         /* top: 0.625rem; */
         top: .75rem;
         left: .5rem;
+        z-index: 1;
 
         & img {
             height: 3rem;
         }
     }
-
-    .btn {
-        position: absolute;
-        top: 1rem;
-        right: .5rem;
-    }
-
-    .theme-chang {
-        text-transform: capitalize;
-        font: 500 10px Arial, sans-serif;
-        border: none;
-        outline: none;
-        background: var(--background-color2);
-        color: var(--text-color) !important;
-
-        padding: 10px 20px;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 16px;
-
-
-        box-shadow: var(--box-shadow);
-        transition: all 0.3s ease;
-
-
-        &:hover {
-            box-shadow: var(---hover--box-shadow2);
-            transform: translateY(-2px);
-            transition: all 0.3s ease;
-
-
-        }
-    }
-
 
     @keyframes animation {
         0% {
@@ -524,20 +563,19 @@
             background: var(---btn--text-color);
         }
     }
+
+    ::-webkit-scrollbar-thumb {
+        color: var(--primary-color);
+        border-radius: 3.125rem;
+        -webkit-border-radius: 3.125rem;
+        -moz-border-radius: 3.125rem;
+        -ms-border-radius: 3.125rem;
+        -o-border-radius: 3.125rem;
+
+    }
+
+
 }
-
-::-webkit-scrollbar-thumb {
-    color: var(--primary-color);
-    border-radius: 3.125rem;
-    -webkit-border-radius: 3.125rem;
-    -moz-border-radius: 3.125rem;
-    -ms-border-radius: 3.125rem;
-    -o-border-radius: 3.125rem;
-
-}
-
-
-
 
 
 /***remove it then this not work***/

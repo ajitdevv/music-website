@@ -86,25 +86,36 @@ searchInput.addEventListener("input", () => {
 
  
 // ********This code run only for (<= 780px) ********//
-function checkScreenSize() {
-  const raju = document.getElementsByClassName("ul");  // collection milti hai
+// function checkScreenSize() {
+//   const menu_on = document.getElementsByClassName("ul");  // collection milti hai
+//   const theme_chang_off = document.getElementsByClassName("btn");  // collection milti hai
+  
+  
+//   if (window.innerWidth <= 780) {
+//     for(let i = 0; i < menu_on.length; i++) {
+//       menu_on[i].style.display = "none";
+//     }
+//   } else {
+//     // Screen badi ho toh wapas display set karo (default: block ya inline block aapke HTML ke hisab se)
+//     for(let i = 0; i < menu_on.length; i++) {
+//       menu_on[i].style.display = "";  // empty string matlab CSS file ya default style follow hoga
+//     }
+//   }
+//   if (window.innerWidth <= 780) {
+//     for(let i = 0; i < theme_chang_off.length; i++) {
+//       theme_chang_off[i].style.display = "none";
+//     }
+//   } else {
+//     // Screen badi ho toh wapas display set karo (default: block ya inline block aapke HTML ke hisab se)
+//     for(let i = 0; i < theme_chang_off.length; i++) {
+//       theme_chang_off[i].style.display = "";  // empty string matlab CSS file ya default style follow hoga
+//     }
+//   }
+// }
 
-  if (window.innerWidth <= 780) {
-    // Sab elements pe display:none lagao
-    for(let i = 0; i < raju.length; i++) {
-      raju[i].style.display = "none";
-    }
-  } else {
-    // Screen badi ho toh wapas display set karo (default: block ya inline block aapke HTML ke hisab se)
-    for(let i = 0; i < raju.length; i++) {
-      raju[i].style.display = "";  // empty string matlab CSS file ya default style follow hoga
-    }
-  }
-}
+// // Page load par check karo
+// checkScreenSize();
 
-// Page load par check karo
-checkScreenSize();
-
-// Screen resize hone par bhi check karo
-window.addEventListener('resize', checkScreenSize);
+// // Screen resize hone par bhi check karo
+// window.addEventListener('resize', checkScreenSize);
 
