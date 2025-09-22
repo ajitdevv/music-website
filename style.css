@@ -111,7 +111,7 @@
 
 .menu,
 .menu-smart,
-.menu-list {
+#menu-list .ul li{
     display: none;
 }
 
