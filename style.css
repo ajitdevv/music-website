@@ -71,26 +71,23 @@
         top: 1.325rem;
         left: 33.19%;
 
-        & .ul {
+        & #ul {
             display: flex;
             flex-direction: row;
             gap: 1.49rem;
             list-style: none;
 
-            & a {
-                text-decoration: none;
-
-                & li {
-                    font-size: 20px;
-                    color: var(--primary-color);
-                    font-family: 'Comic Sans MS', cursive, sans-serif;
-                }
+            & li {
+                font-size: 20px;
+                color: var(--primary-color);
+                font-family: 'Comic Sans MS', cursive, sans-serif;
             }
-
         }
-    }
 
+    }
 }
+
+
 
 .logo {
     position: absolute;
@@ -310,6 +307,46 @@
 
 
 @media (max-width: 430px) {
+    .dark {
+
+        ---background--color-imp: linear-gradient(145deg, #1e2a40, #ffaa00, rgb(32, 31, 27), rgb(29, 19, 3));
+        --background-color: linear-gradient(145deg, #7a5f20, #2c2c2cb5);
+        --text-color: #c3c1c1;
+        --primary-color: rgba(255, 221, 0, 0.918);
+        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+            inset -4px -4px 8px rgba(255, 255, 255, 0.1);
+
+
+        --background-color2: linear-gradient(145deg, #39311f, #211e1eb5);
+        --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
+            -5px -5px 12px rgba(255, 255, 255, 0.05);
+        ---btn--text-color: #e6e1e1;
+
+    }
+
+    .light {
+
+        ---background--color-imp: linear-gradient(145deg,
+                #8ec5fc,
+                #e0c3fc,
+                #f9f9f9,
+                #d1f4f9,
+                #c2ffd8);
+        --background-color: linear-gradient(145deg, #9bd0ff, #ffffff);
+        --text-color: #464444;
+        --primary-color: #1e90ff;
+        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+            inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+
+
+        --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
+        ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
+            -5px -5px 12px rgba(255, 255, 255, 0.6);
+        ---btn--text-color: #383333;
+        /* ---btn--text-color: #000; */
+
+    }
+
     #home_page {
         height: 100vh;
         position: relative;

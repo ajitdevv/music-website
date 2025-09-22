@@ -80,17 +80,16 @@ searchInput.addEventListener("input", () => {
     );
 
     renderSongs(filtered);
-
 });
 
 
- 
+
 // ********This code run only for (<= 780px) ********//
 // function checkScreenSize() {
 //   const menu_on = document.getElementsByClassName("ul");  // collection milti hai
 //   const theme_chang_off = document.getElementsByClassName("btn");  // collection milti hai
-  
-  
+
+
 //   if (window.innerWidth <= 780) {
 //     for(let i = 0; i < menu_on.length; i++) {
 //       menu_on[i].style.display = "none";
@@ -119,9 +118,60 @@ searchInput.addEventListener("input", () => {
 // // Screen resize hone par bhi check karo
 // window.addEventListener('resize', checkScreenSize);
 
+
+
+// ***** This part his ok   ***** //
 const menuSmart = document.querySelector('.menu-smart');
 const menuList = document.getElementById('menu-list');
-
 menuSmart.addEventListener('click', () => {
-  menuList.classList.toggle('open'); // toggle 'open' class
+    menuList.classList.toggle('open'); // toggle 'open' class
+});
+
+
+
+
+
+
+
+
+// !
+
+//   Theme chang using the theme chang button
+const firstchild = document.querySelector(".firstchild");
+
+firstchild.addEventListener('click', () => {
+    if (document.body.classList.contains('dark')) {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+    } else {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        alert("Look like paid website");
+    }
+});
+
+
+
+
+const menuItems = document.querySelectorAll("#menu-list ul li:not(.firstchild)");
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        const category = item.textContent.toLowerCase();
+        const filtered = allSongs.filter(song =>
+            song.other.toLowerCase().includes(category)
+        );
+        renderSongs(filtered);
+        searchInput.value = '';
+    });
+});
+const menulist = document.querySelectorAll(".nav_bar #ul li.filter--")
+menulist.forEach(item => {
+    item.addEventListener("click", () => {
+        const category = item.textContent.toLowerCase();
+        const filtered = allSongs.filter(song =>
+            song.other.toLowerCase().includes(category)
+        );
+        renderSongs(filtered);
+        searchInput.value = '';
+    });
 });
