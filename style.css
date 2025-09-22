@@ -109,7 +109,9 @@
 
 }
 
-.menu {
+.menu,
+.menu-smart,
+.menu-list {
     display: none;
 }
 
