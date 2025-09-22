@@ -119,3 +119,9 @@ searchInput.addEventListener("input", () => {
 // // Screen resize hone par bhi check karo
 // window.addEventListener('resize', checkScreenSize);
 
+const menuSmart = document.querySelector('.menu-smart');
+const menuList = document.getElementById('menu-list');
+
+menuSmart.addEventListener('click', () => {
+  menuList.classList.toggle('open'); // toggle 'open' class
+});
