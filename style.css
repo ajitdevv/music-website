@@ -109,9 +109,8 @@
 
 }
 
-.menu,
-.menu-smart,
-#menu-list .ul li{
+.menu
+{
     display: none;
 }
 
