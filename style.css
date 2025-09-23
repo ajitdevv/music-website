@@ -4,12 +4,8 @@
     box-sizing: border-box;
     user-select: none;
     -webkit-user-select: none;
-    /* Safari */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* IE/Edge */
-
 }
 
 .dark {
@@ -17,7 +13,7 @@
     ---background--color-imp: linear-gradient(145deg, #1e2a40, #ffaa00, rgb(32, 31, 27), rgb(29, 19, 3));
     --background-color: linear-gradient(145deg, #7a5f20, #2c2c2cb5);
     --text-color: #c3c1c1;
-    --primary-color: rgba(255, 221, 0, 0.918);
+    --primary-color: rgba(232, 202, 9, 0.776);
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 
@@ -78,18 +74,16 @@
             list-style: none;
 
             & li {
-                
-               font-size: clamp(.4rem, 2vw, 1.4rem);
+
+                font-size: clamp(.4rem, 2vw, 1.4rem);
                 color: var(--primary-color);
                 font-family: 'Comic Sans MS', cursive, sans-serif;
-                 cursor: pointer;
+                cursor: pointer;
             }
         }
 
     }
 }
-
-
 
 .logo {
     position: absolute;
@@ -104,40 +98,45 @@
 .btn {
     position: absolute;
     top: 0.525rem;
-       /* top: 1rem; */
-        right: 15.4rem;
-        cursor: pointer;
-}
-
-.menu {
-    display: none;
-}
-
-.theme-chang {
-    position: absolute;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+    right: 15.4rem;
     cursor: pointer;
-    font-size: 30px;
-    transition: all 0.3s ease;
-    background: transparent;
- 
-       
-     
-      
-    &:hover {
+
+    & .theme-chang {
+        position: absolute;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 30px;
         transition: all 0.3s ease;
+        background: transparent;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        transform: translateY(-2px);
-        -webkit-transform: translateY(-2px);
-        -moz-transform: translateY(-2px);
-        -ms-transform: translateY(-2px);
-        -o-transform: translateY(-2px);
+
+        &:hover {
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transform: translateY(-2px);
+            -webkit-transform: translateY(-2px);
+            -moz-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+            -o-transform: translateY(-2px);
+        }
     }
+}
+
+.menu {
+    display: none;
 }
 
 .h1 {
@@ -154,13 +153,8 @@
         content: "10000++Songs";
         top: 0;
         left: 0;
-
         position: absolute;
         width: 100%;
-        /*padding: 0.55rem 1.125rem;
-        */
-        /*font-size: 1.5rem;
-        */
         border-right: 2px solid black;
         overflow: hidden;
         animation: animation 2s linear infinite;
@@ -225,14 +219,9 @@
     left: 15%;
     display: flex;
     justify-content: center;
-
-    /* flex-wrap: wrap; */
     gap: 1.25rem;
     width: 70%;
-
     flex-wrap: wrap;
-
-
 }
 
 /**** Song-card ****/
@@ -240,7 +229,6 @@
     position: relative;
     width: 18.75rem;
     height: 16.25rem;
-
     overflow: hidden;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
     background-size: cover;
@@ -256,10 +244,6 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-
-
-
-
 
     &:hover {
         transform: scale(1.05);
@@ -288,71 +272,28 @@
 
 /***** Scorll bar *****/
 
+.scrollable {
+    height: 20px;
+    overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
     width: .625rem;
+}
 
-    &-thumb {
-        background: var(--primary-color);
-        border-radius: 3.125rem;
-        -webkit-border-radius: 3.125rem;
-        -moz-border-radius: 3.125rem;
-        -ms-border-radius: 3.125rem;
-        -o-border-radius: 3.125rem;
-        /*opacity: 0.7;
-        */
-    }
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3.125rem;
 
-
-
-    &:hover {
-        background: var(---btn--text-color);
-    }
 }
 
 
 
 
 
+
+
 @media (max-width: 430px) {
-    .dark {
-
-        ---background--color-imp: linear-gradient(145deg, #1e2a40, #ffaa00, rgb(32, 31, 27), rgb(29, 19, 3));
-        --background-color: linear-gradient(145deg, #7a5f20, #2c2c2cb5);
-        --text-color: #c3c1c1;
-        --primary-color: rgba(255, 221, 0, 0.918);
-        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
-            inset -4px -4px 8px rgba(255, 255, 255, 0.1);
-
-
-        --background-color2: linear-gradient(145deg, #39311f, #211e1eb5);
-        --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
-            -5px -5px 12px rgba(255, 255, 255, 0.05);
-        ---btn--text-color: #e6e1e1;
-
-    }
-
-    .light {
-
-        ---background--color-imp: linear-gradient(145deg,
-                #8ec5fc,
-                #e0c3fc,
-                #f9f9f9,
-                #d1f4f9,
-                #c2ffd8);
-        --background-color: linear-gradient(145deg, #9bd0ff, #ffffff);
-        --text-color: #464444;
-        --primary-color: #1e90ff;
-        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-            inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-
-
-        --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
-        ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
-            -5px -5px 12px rgba(255, 255, 255, 0.6);
-        ---btn--text-color: #383333;
-        /* ---btn--text-color: #000; */
-
-    }
 
     #home_page {
         height: 100vh;
@@ -374,74 +315,9 @@
         display: none;
     }
 
-    /* .menu {
-        width: 145px;
-        display: block;
-       
-        cursor: pointer;
-        font-size: 30px;
-        transform: translate(17.1875rem, .95rem);
-        -webkit-transform: translate(17.1875rem, .95rem);
-        -moz-transform: translate(17.1875rem, .95rem);
-        -ms-transform: translate(17.1875rem, .95rem);
-        -o-transform: translate(17.1875rem, .95rem);
-        position: fixed;
-        z-index: 1;
-
-        & .menu-smart {
-            padding-right: 5px;
-            display: flex;
-            justify-content: flex-end;
-            border: none;
-            outline: none;
-           
-        }
-
-        & #menu-list {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease;
-
-            & .ul {
-
-
-                right: .35rem;
-                margin-top: 5px;
-                padding: 15px;
-                font-size: 25px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-                background-color: #1e8fff5e;
-                border-radius: 15px;
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                -ms-border-radius: 15px;
-                -o-border-radius: 15px;
-            }
-
-            li {
-                font-family: 'Comic Sans MS', cursive, sans-serif;
-                list-style: none;
-
-
-            }
-
-
-
-        }
-    } */
-
-    /* #menu-list.open {
-        max-height: 500px;
-    } */
 
     .logo {
-
-
         position: fixed;
-        /* top: 0.625rem; */
         top: .75rem;
         left: .5rem;
         z-index: 1;
@@ -468,6 +344,7 @@
             border: none;
             outline: none;
             background: transparent;
+            color: var(--primary-color);
         }
 
         & #menu-list {
@@ -494,6 +371,7 @@
             li {
                 font-family: 'Comic Sans MS', cursive, sans-serif;
                 list-style: none;
+                padding: 0 3px;
             }
         }
     }
@@ -504,7 +382,6 @@
         top: 25%;
         left: 50%;
         transform: translateX(-50%);
-        /* font-size: 2rem; */
         font-weight: bold;
         color: rgba(0, 0, 0, 0.4);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -515,11 +392,9 @@
 
         &::before {
             content: "10000++Songs";
-
             top: 0;
             left: 0;
             position: absolute;
-
             font-size: inherit;
             border-right: 0.15em solid black;
             overflow: hidden;
@@ -553,7 +428,6 @@
         transform: translate(-50%, -50%);
         background: var(--background-color);
         padding: 0.75rem 1.125rem;
-
         width: 15.5rem;
         box-shadow: var(--box-shadow);
         border-radius: 2.5rem;
@@ -566,7 +440,6 @@
 
 
         &:hover {
-
             box-shadow: var(---hover--box-shadow2);
         }
 
@@ -583,64 +456,8 @@
 
     }
 
-    /* .music {
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 70%;
-    }
-
-
     /**** Song-card ****/
-    /*  .song-card {
-        position: relative;
-        width: 18.75rem;
-        height: 16.25rem;
 
-        overflow: hidden;
-        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-        box-sizing: border-box;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-
-
-
-
-
-        &:hover {
-            transform: scale(1.05);
-        }
-
-        & .overlay {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: .625rem;
-            box-sizing: border-box;
-        }
-
-        & h3 {
-            margin: 0 0 5px;
-            font-size: 1.1em;
-        }
-
-        & audio {
-            width: 100%;
-            outline: none;
-        }
-    } */
     .music {
         position: absolute;
         top: 50%;
@@ -648,16 +465,14 @@
         display: grid;
         grid-template-columns: 1fr;
         width: 75%;
-        /* max-height: 80vh; */
         gap: 1rem;
-        /* transform: translateY(-50%); */
+
     }
 
     & .song-card {
         position: relative;
         width: 18.75rem;
         height: 16.25rem;
-
         overflow: hidden;
         box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
         background-size: cover;
@@ -700,66 +515,23 @@
 
     /***** Scorll bar *****/
 
-    ::-webkit-scrollbar {
-        width: 10px;
-        color: #1e90ff;
+    .scrollable {
+        height: 50px;
+        overflow-y: scroll;
+    }
 
-        &:hover {
-            background: var(---btn--text-color);
-        }
+    ::-webkit-scrollbar {
+        width: .625rem;
     }
 
     ::-webkit-scrollbar-thumb {
-        color: var(--primary-color);
+        background: var(--primary-color);
         border-radius: 3.125rem;
-        -webkit-border-radius: 3.125rem;
-        -moz-border-radius: 3.125rem;
-        -ms-border-radius: 3.125rem;
-        -o-border-radius: 3.125rem;
 
     }
 }
 
 @media (min-width: 431px) and (max-width: 780px) {
-    .dark {
-
-        ---background--color-imp: linear-gradient(145deg, #1e2a40, #ffaa00, rgb(32, 31, 27), rgb(29, 19, 3));
-        --background-color: linear-gradient(145deg, #7a5f20, #2c2c2cb5);
-        --text-color: #c3c1c1;
-        --primary-color: rgba(255, 221, 0, 0.918);
-        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
-            inset -4px -4px 8px rgba(255, 255, 255, 0.1);
-
-
-        --background-color2: linear-gradient(145deg, #39311f, #211e1eb5);
-        --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
-            -5px -5px 12px rgba(255, 255, 255, 0.05);
-        ---btn--text-color: #e6e1e1;
-
-    }
-
-    .light {
-
-        ---background--color-imp: linear-gradient(145deg,
-                #8ec5fc,
-                #e0c3fc,
-                #f9f9f9,
-                #d1f4f9,
-                #c2ffd8);
-        --background-color: linear-gradient(145deg, #9bd0ff, #ffffff);
-        --text-color: #464444;
-        --primary-color: #1e90ff;
-        --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
-            inset -4px -4px 8px rgba(255, 255, 255, 0.9);
-
-
-        --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
-        ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
-            -5px -5px 12px rgba(255, 255, 255, 0.6);
-        ---btn--text-color: #383333;
-        /* ---btn--text-color: #000; */
-
-    }
 
     #home_page {
         height: 100vh;
@@ -790,14 +562,13 @@
         cursor: pointer;
         font-size: 26px;
         z-index: 9999;
+
         & .menu-smart {
             padding-right: 5px;
             display: flex;
             justify-content: flex-end;
-
             border: none;
             outline: none;
-            /* background-color: #1e8fff5e; */
         }
 
         & #menu-list {
@@ -806,12 +577,10 @@
             transition: max-height 0.4s ease;
 
             & .ul {
-
-
                 right: .35rem;
                 margin-top: 5px;
                 padding: 15px;
-                font-size: 25px;
+                font-size: 22px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -828,10 +597,8 @@
                 font-family: 'Comic Sans MS', cursive, sans-serif;
                 list-style: none;
 
-
+                padding: 0 5px;
             }
-
-
 
         }
     }
@@ -845,7 +612,6 @@
         top: 25%;
         left: 50%;
         transform: translateX(-50%);
-
         font-weight: bold;
         color: rgba(0, 0, 0, 0.4);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -856,11 +622,9 @@
 
         &::before {
             content: "10000++Songs";
-
             top: 0;
             left: 0;
             position: absolute;
-
             font-size: inherit;
             border-right: 0.15em solid black;
             overflow: hidden;
@@ -870,10 +634,7 @@
     }
 
     .logo {
-
-        /* position: absolute; */
         position: fixed;
-        /* top: 0.625rem; */
         top: .75rem;
         left: .5rem;
         z-index: 1;
@@ -907,7 +668,6 @@
         transform: translate(-50%, -50%);
         background: var(--background-color);
         padding: 0.75rem 1.125rem;
-
         width: 15.5rem;
         box-shadow: var(--box-shadow);
         border-radius: 2.5rem;
@@ -915,9 +675,6 @@
         -moz-border-radius: 2.5rem;
         -ms-border-radius: 2.5rem;
         -o-border-radius: 2.5rem;
-
-
-
 
         &:hover {
 
@@ -931,7 +688,6 @@
             font-size: 1.2rem;
             width: 100%;
             color: var(--text-color);
-
 
         }
 
@@ -952,7 +708,6 @@
         position: relative;
         width: 18.75rem;
         height: 16.25rem;
-
         overflow: hidden;
         box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
         background-size: cover;
@@ -966,10 +721,6 @@
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
-
-
-
-
 
         &:hover {
             transform: scale(1.05);
@@ -998,27 +749,20 @@
 
     /***** Scorll bar *****/
 
-    ::-webkit-scrollbar {
-        width: 10px;
-        color: #1e90ff;
+    .scrollable {
+        height: 100px;
+        overflow-y: scroll;
+    }
 
-        &:hover {
-            background: var(---btn--text-color);
-        }
+    ::-webkit-scrollbar {
+        width: .625rem;
     }
 
     ::-webkit-scrollbar-thumb {
-        color: var(--primary-color);
+        background: var(--primary-color);
         border-radius: 3.125rem;
-        -webkit-border-radius: 3.125rem;
-        -moz-border-radius: 3.125rem;
-        -ms-border-radius: 3.125rem;
-        -o-border-radius: 3.125rem;
 
     }
 
 
 }
-
-
-/***remove it then this not work***/
