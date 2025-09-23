@@ -146,7 +146,7 @@ firstchild.addEventListener('click', () => {
     } else {
         document.body.classList.remove('light');
         document.body.classList.add('dark');
-        alert("Look like paid website");
+        alert("Theme chang");
     }
 });
 
@@ -175,3 +175,4 @@ menulist.forEach(item => {
         searchInput.value = '';
     });
 });
+

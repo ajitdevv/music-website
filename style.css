@@ -344,7 +344,7 @@
             border: none;
             outline: none;
             background: transparent;
-            color: var(--primary-color);
+            /* color: var(--primary-color); */
         }
 
         & #menu-list {
