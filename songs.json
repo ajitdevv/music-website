@@ -293,13 +293,13 @@
   "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758732104/aaj_shajaye_ajmxv4.webp",
   "src":"https://res.cloudinary.com/djl1swpiu/video/upload/v1758731917/Aaj_Sajeya_Alaya_F_Goldie_Sohel_Punit_Malhotra_Official_Video_SneakerSong_Dharma_2.0_cquvyr.mp3"
 },
-// {
-//   "name": "Raanjhan",
-//   "singer": "Parampara Tandon",
-//   "other": "Do Patti,Kumaar,emotional,soft,romantic,new,Love , Emotional , “feel good”,soulful song",
-//   "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758732105/raajjhan_vpenpu.webp",
-//   "src":"https://res.cloudinary.com/djl1swpiu/video/upload/v1758732316/Full_Video_Raanjhan_Do_Patti_Kriti_Sanon_Shaheer_Sheikh_Parampara_Tandon_Sachet-Parampara_oambdn.mp3"
-// },
+{
+  "name": "Raanjhan",
+  "singer": "Parampara Tandon",
+  "other": "Do Patti,Kumaar,emotional,soft,romantic,new,Love , Emotional , “feel good”,soulful song",
+  "image": "https://res.cloudinary.com/djl1swpiu/image/upload/v1758732105/raajjhan_vpenpu.webp",
+  "src":"https://res.cloudinary.com/djl1swpiu/video/upload/v1758732316/Full_Video_Raanjhan_Do_Patti_Kriti_Sanon_Shaheer_Sheikh_Parampara_Tandon_Sachet-Parampara_oambdn.mp3"
+},
 {
   "name": "Rangeeni",
   "singer": "Amit Trivedi, Jubin Nautiyal",
