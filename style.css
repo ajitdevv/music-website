@@ -284,14 +284,14 @@
 /***** Section 2 *****/
 
 #second-page {
-    position: absolute;
-    left: 50%;
-    top: 99%;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 99%; */
     transform: translateX(-50%);
    
    
 
-    & .view-btn {
+    & .ViewBtn {
         /* position: absolute; */
         /* left: 50%; */
         /* top: 99%; */
