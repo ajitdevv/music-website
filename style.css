@@ -71,17 +71,17 @@
     & .nav_bar {
         position: absolute;
         top: 1.325rem;
-        left: 33.19%;
+        left: 32.19%;
 
         & #ul {
             display: flex;
             flex-direction: row;
-            gap: 1.49rem;
+            gap: 1.39rem;
             list-style: none;
 
             & li {
 
-                font-size: clamp(.4rem, 2vw, 1.4rem);
+                font-size: clamp(.4rem, 2vw, 1.36rem);
                 color: var(--primary-color);
                 font-family: 'Comic Sans MS', cursive, sans-serif;
                 cursor: pointer;
@@ -194,7 +194,6 @@
     border-radius: 2.5rem;
     width: 17.5rem;
     box-shadow: var(--box-shadow);
-
     -webkit-border-radius: 2.5rem;
     -moz-border-radius: 2.5rem;
     -ms-border-radius: 2.5rem;
@@ -213,15 +212,13 @@
         width: 100%;
         color: var(--text-color);
 
-
     }
 
 }
 
-
 .music {
     position: absolute;
-    top: 58%;
+    top: 60%;
     left: 15%;
     display: flex;
     justify-content: center;
@@ -229,7 +226,7 @@
     width: 70%;
     height: 40%;
     flex-wrap: wrap;
-   
+
 }
 
 /**** Song-card ****/
@@ -277,48 +274,6 @@
         outline: none;
     }
 }
-
-
-
-
-/***** Section 2 *****/
-
-#second-page {
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 99%; */
-    transform: translateX(-50%);
-   
-   
-
-    & .ViewBtn {
-        /* position: absolute; */
-        /* left: 50%; */
-        /* top: 99%; */
-        transform: translateX(-50%);
-        width: 80px;
-        height: 20px;
-        border: 2px solid var(--primary-color);
-        color: var(---btn--text-color);
-        border-radius: 2px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
-        background-color: var(--primary-color);
-z-index: 1000;
-        font-size: 10px;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-    }
-}
-
-
-
-
-
 
 
 /***** Scorll bar *****/
