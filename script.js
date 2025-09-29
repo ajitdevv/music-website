@@ -17,6 +17,8 @@ btn.addEventListener("click", function () {
     }
 });
 
+// ******Menu open funclity****** //
+
 const menuSmart = document.querySelector('.menu-smart');
 const menuList = document.getElementById('menu-list');
 
@@ -43,7 +45,7 @@ function getRandomSongs(arr, n) {
 
 
 
-// ******View More funclity****** //
+// ******Menu open funclity****** //
 let allSongs = [];
 let currentIndex = 0; 
 const perPage = 9; 
