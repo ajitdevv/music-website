@@ -107,7 +107,39 @@ function renderNextChunk(songList) {
 //             }
 //         });
 //     });
+// }
+
+
+let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+function attachFavoriteListeners() {
+    const favButtons = document.querySelectorAll('.favorite-btn');
+
+    favButtons.forEach((btn, index) => {
+        if (!btn.dataset.listener) {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+
+                if (btn.classList.contains('active')) {
+                    btn.textContent = "❤️";
+                    if (!favorites.includes(index)) favorites.push(index);
+                } else {
+                    btn.textContent = "♡";
+                    favorites = favorites.filter(i => i !== index);
+                }
+
+                // Save updated favorites to localStorage
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+
+            btn.dataset.listener = "true";
+        }
+    });
 }
+
+
+
+
 // Jab ek audio play ho, baaki pause ho jaye
 function attachAudioListeners() {
     const audios = document.querySelectorAll('audio');
