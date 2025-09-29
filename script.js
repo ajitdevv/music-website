@@ -17,7 +17,12 @@ btn.addEventListener("click", function () {
     }
 });
 
+const menuSmart = document.querySelector('.menu-smart');
+const menuList = document.getElementById('menu-list');
 
+menuSmart.addEventListener('click', () => {
+  menuList.classList.toggle('open');
+});
 
 //***** Song search *****//
 const container = document.getElementsByClassName("music")[0];
