@@ -23,7 +23,7 @@ const menuSmart = document.querySelector('.menu-smart');
 const menuList = document.getElementById('menu-list');
 
 menuSmart.addEventListener('click', () => {
-  menuList.classList.toggle('open');
+    menuList.classList.toggle('open');
 });
 
 //***** Song search *****//
@@ -47,9 +47,9 @@ function getRandomSongs(arr, n) {
 
 // ******Menu open funclity****** //
 let allSongs = [];
-let currentIndex = 0; 
-const perPage = 9; 
-let loadMoreBtn; 
+let currentIndex = 0;
+const perPage = 9;
+let loadMoreBtn;
 function renderSongs(songList) {
     container.innerHTML = "";
     currentIndex = 0;
@@ -66,6 +66,11 @@ function renderNextChunk(songList) {
         card.className = "song-card";
         card.style.backgroundImage = `url(${song.image})`;
 
+        // ⭐ Favorite Button
+        const favBtn = document.createElement("button");
+        favBtn.className = "favorite-btn";
+        favBtn.innerHTML = "♡";
+        favBtn.title = "Add to Favorites";
         const overlay = document.createElement("div");
         overlay.className = "overlay";
 
@@ -78,18 +83,52 @@ function renderNextChunk(songList) {
 
         overlay.appendChild(title);
         overlay.appendChild(audio);
+        card.appendChild(favBtn);
         card.appendChild(overlay);
         container.appendChild(card);
     });
 
-    currentIndex += nextSongs.length; 
+    currentIndex += nextSongs.length;
+    attachAudioListeners();
+    attachFavoriteListeners();
+}
+
+// fevret toggel
+function attachFavoriteListeners() {
+    const fevButtons = document.querySelectorAll('.favorite-btn');
+
+    fevButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+            if (btn.classList.contains('active')) {
+                btn.textContent = "❤️";
+            } else {
+                btn.textContent = "♡";
+            }
+        });
+    });
+}
+// Jab ek audio play ho, baaki pause ho jaye
+function attachAudioListeners() {
+    const audios = document.querySelectorAll('audio');
+
+    audios.forEach(audio => {
+        audio.onplay = null;
+        audio.addEventListener('play', () => {
+            audios.forEach(other => {
+                if (other !== audio) {
+                    other.pause();
+                    other.currentTime = 0;
+                }
+            });
+        });
+    });
 }
 
 
 function createLoadMoreButton(songList) {
     loadMoreBtn = document.createElement("button");
     loadMoreBtn.innerText = "View More";
-
     loadMoreBtn.style.display = "block";
     loadMoreBtn.style.margin = "20px auto";
     loadMoreBtn.style.padding = "10px 20px";
@@ -112,7 +151,7 @@ function createLoadMoreButton(songList) {
     loadMoreBtn.addEventListener("click", () => {
         renderNextChunk(songList);
 
-       
+
         if (currentIndex >= songList.length) {
             loadMoreBtn.remove();
         }
@@ -155,3 +194,5 @@ menulist.forEach(item => {
         searchInput.value = '';
     });
 });
+
+
