@@ -2,6 +2,10 @@
 
 
 
+// ------------------- Global Variables -------------------
+let songList = [];  // <== Add this at the very top, before any function
+let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
 //***** Theme chang *****//
 
 
@@ -34,6 +38,7 @@ fetch("songs.json")
     .then(res => res.json())
     .then(data => {
         allSongs = data;
+        songList = data;
         const randomThree = getRandomSongs(allSongs, 3);
         renderSongs(randomThree);
     });
@@ -58,6 +63,9 @@ function renderSongs(songList) {
     if (songList.length > perPage) createLoadMoreButton(songList);
 }
 
+
+
+
 function renderNextChunk(songList) {
     const nextSongs = songList.slice(currentIndex, currentIndex + perPage);
 
@@ -65,12 +73,18 @@ function renderNextChunk(songList) {
         const card = document.createElement("div");
         card.className = "song-card";
         card.style.backgroundImage = `url(${song.image})`;
-
-        // ⭐ Favorite Button
+card.dataset.id = song.id; 
+        // ⭐ Favorite Button        
         const favBtn = document.createElement("button");
         favBtn.className = "favorite-btn";
-        favBtn.innerHTML = "♡";
-        favBtn.title = "Add to Favorites";
+        favBtn.textContent = "♡";
+        favBtn.dataset.id = song.id;
+
+        if (favorites.includes(song.id)) {
+            favBtn.classList.add('active');
+            favBtn.textContent = "❤️";
+        }
+        // div creat for songs
         const overlay = document.createElement("div");
         overlay.className = "overlay";
 
@@ -110,7 +124,6 @@ function renderNextChunk(songList) {
 // }
 
 
-let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 function attachFavoriteListeners() {
     const favButtons = document.querySelectorAll('.favorite-btn');
@@ -118,14 +131,15 @@ function attachFavoriteListeners() {
     favButtons.forEach((btn, index) => {
         if (!btn.dataset.listener) {
             btn.addEventListener('click', () => {
+                const id = btn.dataset.id;
                 btn.classList.toggle('active');
 
                 if (btn.classList.contains('active')) {
                     btn.textContent = "❤️";
-                    if (!favorites.includes(index)) favorites.push(index);
+                    if (!favorites.includes(id)) favorites.push(id);
                 } else {
                     btn.textContent = "♡";
-                    favorites = favorites.filter(i => i !== index);
+                    favorites = favorites.filter(i => i != id);
                 }
 
                 // Save updated favorites to localStorage
@@ -133,10 +147,48 @@ function attachFavoriteListeners() {
             });
 
             btn.dataset.listener = "true";
+
         }
     });
 }
 
+
+
+
+
+
+function attachFavoriteListeners() {
+    const favButtons = document.querySelectorAll('.favorite-btn');
+
+    favButtons.forEach(btn => {
+        if (!btn.dataset.listener) {
+            btn.addEventListener('click', () => {
+                const id = btn.dataset.id;
+                btn.classList.toggle('active');
+
+                if (btn.classList.contains('active')) {
+                    btn.textContent = "❤️";
+                    if (!favorites.includes(id)) favorites.push(id);
+                } else {
+                    btn.textContent = "♡";
+                    favorites = favorites.filter(i => i !== id);
+                }
+
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+
+            btn.dataset.listener = "true";
+        }
+    });
+}
+const favoriteCards = document.querySelectorAll('.song-card');
+favoriteCards.forEach(card => {
+    if (favorites.includes(card.dataset.id)) {
+        card.style.display = "block";
+    } else {
+        card.style.display = "none";
+    }
+});
 
 
 
