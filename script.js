@@ -94,19 +94,19 @@ function renderNextChunk(songList) {
 }
 
 // fevret toggel
-function attachFavoriteListeners() {
-    const fevButtons = document.querySelectorAll('.favorite-btn');
+// function attachFavoriteListeners() {
+//     const fevButtons = document.querySelectorAll('.favorite-btn');
 
-    fevButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.classList.toggle('active');
-            if (btn.classList.contains('active')) {
-                btn.textContent = "❤️";
-            } else {
-                btn.textContent = "♡";
-            }
-        });
-    });
+//     fevButtons.forEach(btn => {
+//         btn.addEventListener('click', () => {
+//             btn.classList.toggle('active');
+//             if (btn.classList.contains('active')) {
+//                 btn.textContent = "❤️";
+//             } else {
+//                 btn.textContent = "♡";
+//             }
+//         });
+//     });
 }
 // Jab ek audio play ho, baaki pause ho jaye
 function attachAudioListeners() {
