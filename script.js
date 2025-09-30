@@ -1,9 +1,9 @@
-// //! add extra ====> add your card using only name and pitcher
+// //! add extra ====> add your songs
 
 
 
 // ------------------- Global Variables -------------------
-let songList = [];  // <== Add this at the very top, before any function
+let songList = [];  
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 //***** Theme chang *****//
@@ -40,10 +40,9 @@ menuSmart.addEventListener('click', () => {
     menuList.classList.toggle('open');
 });
 
-//***** Song search *****//
-const container = document.getElementsByClassName("music")[0];
-const searchInput = document.getElementsByClassName("search_input")[0];
 
+// 3 songs are render in starting
+const container = document.getElementsByClassName("music")[0];
 fetch("songs.json")
     .then(res => res.json())
     .then(data => {
@@ -60,7 +59,7 @@ function getRandomSongs(arr, n) {
 
 
 
-// ******Menu open funclity****** //
+// ****** Manage menu visibility when user interacts with the menu toggle ****** //
 let allSongs = [];
 let currentIndex = 0;
 const perPage = 9;
@@ -84,7 +83,7 @@ function renderNextChunk(songList) {
         card.className = "song-card";
         card.style.backgroundImage = `url(${song.image})`;
         card.dataset.id = song.id;
-        // ⭐ Favorite Button        
+        //Favorite Button        
         const favBtn = document.createElement("button");
         favBtn.className = "favorite-btn";
         favBtn.textContent = "♡";
@@ -94,7 +93,6 @@ function renderNextChunk(songList) {
             favBtn.classList.add('active');
             favBtn.textContent = "❤️";
         }
-        // div creat for songs
         const overlay = document.createElement("div");
         overlay.className = "overlay";
 
@@ -117,38 +115,7 @@ function renderNextChunk(songList) {
     attachFavoriteListeners();
 }
 
-function attachFavoriteListeners() {
-    const favButtons = document.querySelectorAll('.favorite-btn');
-
-    favButtons.forEach((btn, index) => {
-        if (!btn.dataset.listener) {
-            btn.addEventListener('click', () => {
-                const id = btn.dataset.id;
-                btn.classList.toggle('active');
-
-                if (btn.classList.contains('active')) {
-                    btn.textContent = "❤️";
-                    if (!favorites.includes(id)) favorites.push(id);
-                } else {
-                    btn.textContent = "♡";
-                    favorites = favorites.filter(i => i != id);
-                }
-
-                // Save updated favorites to localStorage
-                localStorage.setItem('favorites', JSON.stringify(favorites));
-            });
-
-            btn.dataset.listener = "true";
-
-        }
-    });
-}
-
-
-
-
-
-
+// Update heart icon appearance when user marks/unmarks as favorite...
 function attachFavoriteListeners() {
     const favButtons = document.querySelectorAll('.favorite-btn');
 
@@ -173,18 +140,10 @@ function attachFavoriteListeners() {
         }
     });
 }
-// const favoriteCards = document.querySelectorAll('.song-card');
-// favoriteCards.forEach(card => {
-//     if (favorites.includes(card.dataset.id)) {
-//         card.style.display = "block";
-//     } else {
-//         card.style.display = "none";
-//     }
-// });
 
 
 
-// Jab ek audio play ho, baaki pause ho jaye
+// Pause any currently playing audio when a new track is played
 function attachAudioListeners() {
     const audios = document.querySelectorAll('audio');
 
@@ -201,6 +160,8 @@ function attachAudioListeners() {
     });
 }
 
+
+// Append more songs to the list when the user clicks 'View More'
 
 function createLoadMoreButton(songList) {
     loadMoreBtn = document.createElement("button");
@@ -236,6 +197,10 @@ function createLoadMoreButton(songList) {
     });
 }
 
+
+// Filter songs in real-time based on user search input
+
+const searchInput = document.getElementsByClassName("search_input")[0];
 searchInput.addEventListener("input", () => {
     const query = searchInput.value.toLowerCase();
     const filtered = allSongs.filter(song =>
@@ -246,6 +211,8 @@ searchInput.addEventListener("input", () => {
     renderSongs(filtered);
 });
 
+
+// Dynamically filter songs according to user-selected options
 
 const menuItems = document.querySelectorAll("#menu-list #ul li:not(.firstchild),.nav_bar #top-ul li.filter--");
 menuItems.forEach(item => {
@@ -259,7 +226,7 @@ menuItems.forEach(item => {
     });
 });
 
-// favorite songs filter 
+// Display user's favorite songs based on saved favorites
 const favDesktopBtn = document.getElementById('show-favorites');
 const favMobileBtn = document.getElementById('show-favorites-small-screen');
 
