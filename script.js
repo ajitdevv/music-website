@@ -73,7 +73,7 @@ function renderNextChunk(songList) {
         const card = document.createElement("div");
         card.className = "song-card";
         card.style.backgroundImage = `url(${song.image})`;
-card.dataset.id = song.id; 
+        card.dataset.id = song.id;
         // ⭐ Favorite Button        
         const favBtn = document.createElement("button");
         favBtn.className = "favorite-btn";
@@ -106,24 +106,6 @@ card.dataset.id = song.id;
     attachAudioListeners();
     attachFavoriteListeners();
 }
-
-// fevret toggel
-// function attachFavoriteListeners() {
-//     const fevButtons = document.querySelectorAll('.favorite-btn');
-
-//     fevButtons.forEach(btn => {
-//         btn.addEventListener('click', () => {
-//             btn.classList.toggle('active');
-//             if (btn.classList.contains('active')) {
-//                 btn.textContent = "❤️";
-//             } else {
-//                 btn.textContent = "♡";
-//             }
-//         });
-//     });
-// }
-
-
 
 function attachFavoriteListeners() {
     const favButtons = document.querySelectorAll('.favorite-btn');
@@ -181,14 +163,14 @@ function attachFavoriteListeners() {
         }
     });
 }
-const favoriteCards = document.querySelectorAll('.song-card');
-favoriteCards.forEach(card => {
-    if (favorites.includes(card.dataset.id)) {
-        card.style.display = "block";
-    } else {
-        card.style.display = "none";
-    }
-});
+// const favoriteCards = document.querySelectorAll('.song-card');
+// favoriteCards.forEach(card => {
+//     if (favorites.includes(card.dataset.id)) {
+//         card.style.display = "block";
+//     } else {
+//         card.style.display = "none";
+//     }
+// });
 
 
 
@@ -255,7 +237,7 @@ searchInput.addEventListener("input", () => {
 });
 
 
-const menuItems = document.querySelectorAll("#menu-list ul li:not(.firstchild)");
+const menuItems = document.querySelectorAll("#menu-list #ul li:not(.firstchild),.nav_bar #top-ul li.filter--");
 menuItems.forEach(item => {
     item.addEventListener("click", () => {
         const category = item.textContent.toLowerCase();
@@ -267,16 +249,29 @@ menuItems.forEach(item => {
     });
 });
 
-const menulist = document.querySelectorAll(".nav_bar #ul li.filter--");
-menulist.forEach(item => {
-    item.addEventListener("click", () => {
-        const category = item.textContent.toLowerCase();
-        const filtered = allSongs.filter(song =>
-            song.other.toLowerCase().includes(category)
-        );
-        renderSongs(filtered);
-        searchInput.value = '';
-    });
+// const menulist = document.querySelectorAll(".nav_bar #top-ul li.filter--");
+// menulist.forEach(item => {
+//     item.addEventListener("click", () => {
+//         const category = item.textContent.toLowerCase();
+//         const filtered = allSongs.filter(song =>
+//             song.other.toLowerCase().includes(category)
+//         );
+//         renderSongs(filtered);
+//         searchInput.value = '';
+//     });
+// });
+
+
+
+
+
+const favSongsBtn = document.getElementById('show-favorites');
+
+favSongsBtn.addEventListener('click', () => {
+    let favs = JSON.parse(localStorage.getItem('favorites')) || [];
+    const filtered = allSongs.filter(song => favs.includes(song.id));
+    renderSongs(filtered);
 });
+
 
 
