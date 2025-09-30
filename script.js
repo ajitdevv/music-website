@@ -20,7 +20,17 @@ btn.addEventListener("click", function () {
         alert("Look like paid website");
     }
 });
-
+let btnmobile = document.querySelector(".firstchild")
+btnmobile.addEventListener("click", function () {
+    if (document.body.classList.contains('dark')) {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+    } else {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        alert("Look like paid website");
+    }
+});
 // ******Menu open funclity****** //
 
 const menuSmart = document.querySelector('.menu-smart');
