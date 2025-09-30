@@ -256,22 +256,21 @@ menuItems.forEach(item => {
 //         const filtered = allSongs.filter(song =>
 //             song.other.toLowerCase().includes(category)
 //         );
-//         renderSongs(filtered);
+ //         renderSongs(filtered);
 //         searchInput.value = '';
 //     });
 // });
 
 
+// favorite songs filter 
+const favDesktopBtn = document.getElementById('show-favorites');
+const favMobileBtn = document.getElementById('show-favorites-small-screen');
 
-
-
-const favSongsBtn = document.getElementById('show-favorites');
-
-favSongsBtn.addEventListener('click', () => {
+function handleFavClick() {
     let favs = JSON.parse(localStorage.getItem('favorites')) || [];
-    const filtered = allSongs.filter(song => favs.includes(song.id));
+    const filtered = allSongs.filter(song => favs.includes(String(song.id)));
     renderSongs(filtered);
-});
+}
 
-
-
+if (favDesktopBtn) favDesktopBtn.addEventListener('click', handleFavClick);
+if (favMobileBtn) favMobileBtn.addEventListener('click', handleFavClick);
