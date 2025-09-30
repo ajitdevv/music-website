@@ -6,6 +6,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+
 }
 
 .dark {
@@ -54,11 +55,24 @@
 
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(---background--color-imp);
+}
+
+
+
 #home_page {
     z-index: 1;
     height: 100vh;
     position: relative;
-    background: var(---background--color-imp);
+    /* background: var(---background--color-imp); */
     transition: background 0.5s ease;
     -webkit-transition: background 0.5s ease;
     -moz-transition: background 0.5s ease;
@@ -67,6 +81,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
+
 
     & .nav_bar {
         position: absolute;
@@ -92,6 +107,7 @@
 }
 
 .logo {
+
     position: absolute;
     top: 0.625rem;
     left: 11.6875rem;
@@ -102,6 +118,7 @@
 }
 
 .btn {
+
     position: absolute;
     top: 0.525rem;
     right: 15.4rem;
@@ -146,6 +163,7 @@
 }
 
 .h1 {
+
     position: absolute;
     top: 20%;
     left: 50%;
@@ -185,6 +203,7 @@
 }
 
 .search {
+
     position: absolute;
     top: 42%;
     left: 50%;
@@ -210,13 +229,16 @@
         background: transparent;
         font-size: 1.2rem;
         width: 100%;
+        overflow: auto;
         color: var(--text-color);
 
     }
 
 }
 
-.music {
+
+ .music {
+
     position: absolute;
     top: 60%;
     left: 15%;
@@ -227,7 +249,7 @@
     height: 40%;
     flex-wrap: wrap;
 
-}
+} 
 
 /**** Song-card ****/
 .song-card {
@@ -301,7 +323,12 @@
         font-weight: bold;
     }
 }
-
+.footerr{
+    position: absolute;
+    top: 95%;
+    right: auto;
+    z-index: 1000;
+}
 
 /***** Scorll bar *****/
 
@@ -331,7 +358,7 @@
     #home_page {
         height: 100vh;
         position: relative;
-        background: var(---background--color-imp);
+        /* background: var(---background--color-imp); */
         transition: background 0.5s ease;
         -webkit-transition: background 0.5s ease;
         -moz-transition: background 0.5s ease;
@@ -499,7 +526,7 @@
         grid-template-columns: 1fr;
         width: 75%;
         gap: 1rem;
-        
+
     }
 
     & .song-card {
@@ -569,7 +596,7 @@
     #home_page {
         height: 100vh;
         position: relative;
-        background: var(---background--color-imp);
+        /* background: var(---background--color-imp); */
         transition: background 0.5s ease;
         -webkit-transition: background 0.5s ease;
         -moz-transition: background 0.5s ease;
