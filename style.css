@@ -609,7 +609,7 @@
             overflow: hidden;
             transition: max-height 0.4s ease;
 
-            & .ul {
+            & #ul {
                 right: .35rem;
                 margin-top: 5px;
                 padding: 15px;
@@ -638,6 +638,7 @@
 
     #menu-list.open {
         max-height: 500px;
+        /* background-color: #1e8fff5e; */
     }
 
     .h1 {

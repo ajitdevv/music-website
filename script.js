@@ -249,19 +249,6 @@ menuItems.forEach(item => {
     });
 });
 
-// const menulist = document.querySelectorAll(".nav_bar #top-ul li.filter--");
-// menulist.forEach(item => {
-//     item.addEventListener("click", () => {
-//         const category = item.textContent.toLowerCase();
-//         const filtered = allSongs.filter(song =>
-//             song.other.toLowerCase().includes(category)
-//         );
- //         renderSongs(filtered);
-//         searchInput.value = '';
-//     });
-// });
-
-
 // favorite songs filter 
 const favDesktopBtn = document.getElementById('show-favorites');
 const favMobileBtn = document.getElementById('show-favorites-small-screen');
