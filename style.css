@@ -19,7 +19,8 @@
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 
-    --ul-background-color: rgba(232, 202, 9, 0.34);
+    /* --ul-background-color: rgba(232, 202, 9, 0.34); */
+    --ul-background-color: rgba(20, 18, 0, 0.34);
     --background-color2: linear-gradient(145deg, #39311f, #211e1eb5);
     --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
         -5px -5px 12px rgba(255, 255, 255, 0.05);
@@ -86,17 +87,18 @@ body {
     & .nav_bar {
         position: absolute;
         top: 1.325rem;
-        left: 28.14%;
+        left: 27.29%;
 
         & #top-ul {
             display: flex;
             flex-direction: row;
-            gap: 1.39rem;
+           
+            gap: clamp(-10.1rem, 2vw, 2rem);
             list-style: none;
 
             & li {
 
-                font-size: clamp(.4rem, 2vw, 1.36rem);
+                font-size: clamp(.1rem, 2vw, 1.36rem);
                 color: var(--primary-color);
                 font-family: 'Comic Sans MS', cursive, sans-serif;
                 cursor: pointer;
@@ -121,6 +123,7 @@ body {
 
     position: absolute;
     top: 0.525rem;
+    /* right: 15.4rem; */
     right: 15.4rem;
     cursor: pointer;
 
@@ -423,7 +426,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                color: #1e2a40;
+                color: #202733;
+                
                 align-items: center;
                 background-color: var(--ul-background-color);
                 border-radius: 15px;

@@ -3,7 +3,7 @@
 
 
 // ------------------- Global Variables -------------------
-let songList = [];  
+let songList = [];
 let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 //***** Theme chang *****//
@@ -39,7 +39,6 @@ const menuList = document.getElementById('menu-list');
 menuSmart.addEventListener('click', () => {
     menuList.classList.toggle('open');
 });
-
 
 // 3 songs are render in starting
 const container = document.getElementsByClassName("music")[0];
@@ -91,7 +90,7 @@ function renderNextChunk(songList) {
 
         if (favorites.includes(song.id)) {
             favBtn.classList.add('active');
-            favBtn.textContent = "❤️";
+            favBtn.textContent = "💖";
         }
         const overlay = document.createElement("div");
         overlay.className = "overlay";
@@ -126,7 +125,7 @@ function attachFavoriteListeners() {
                 btn.classList.toggle('active');
 
                 if (btn.classList.contains('active')) {
-                    btn.textContent = "❤️";
+                    btn.textContent = "💖";
                     if (!favorites.includes(id)) favorites.push(id);
                 } else {
                     btn.textContent = "♡";
