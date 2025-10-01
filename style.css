@@ -327,13 +327,6 @@ body {
     }
 }
 
-.footerr {
-    position: absolute;
-    top: 95%;
-    right: auto;
-    z-index: 1000;
-}
-
 /***** Scorll bar *****/
 
 .scrollable {
