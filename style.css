@@ -19,7 +19,7 @@
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),
         inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 
-
+    --ul-background-color: rgba(232, 202, 9, 0.34);
     --background-color2: linear-gradient(145deg, #39311f, #211e1eb5);
     --hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.6),
         -5px -5px 12px rgba(255, 255, 255, 0.05);
@@ -46,7 +46,7 @@
     --box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
         inset -4px -4px 8px rgba(255, 255, 255, 0.9);
 
-
+    --ul-background-color: #1e8fff5e;
     --background-color2: linear-gradient(145deg, #abd8ff, #ffffff);
     ---hover--box-shadow2: 5px 5px 12px rgba(0, 0, 0, 0.08),
         -5px -5px 12px rgba(255, 255, 255, 0.6);
@@ -237,7 +237,7 @@ body {
 }
 
 
- .music {
+.music {
 
     position: absolute;
     top: 60%;
@@ -249,7 +249,7 @@ body {
     height: 40%;
     flex-wrap: wrap;
 
-} 
+}
 
 /**** Song-card ****/
 .song-card {
@@ -323,7 +323,8 @@ body {
         font-weight: bold;
     }
 }
-.footerr{
+
+.footerr {
     position: absolute;
     top: 95%;
     right: auto;
@@ -424,7 +425,7 @@ body {
                 gap: 10px;
                 color: #1e2a40;
                 align-items: center;
-                background-color: #1e8fff5e;
+                background-color: var(--ul-background-color);
                 border-radius: 15px;
             }
 
@@ -460,6 +461,8 @@ body {
             overflow: hidden;
             animation: animation 2s linear infinite;
             -webkit-animation: animation 2s linear infinite;
+
+            -webkit-animation: animation 2s linear infinite;
         }
     }
 
@@ -479,7 +482,6 @@ body {
         }
 
     }
-
 
     .search {
         position: absolute;
@@ -523,53 +525,54 @@ body {
         top: 50%;
         left: 15%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         width: 75%;
         gap: 1rem;
 
-    }
-
-    & .song-card {
-        position: relative;
-        width: 18.75rem;
-        height: 16.25rem;
-        overflow: hidden;
-        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-        box-sizing: border-box;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-
-        &:hover {
-            transform: scale(1.03);
-        }
-
-        & .overlay {
-            position: absolute;
-            bottom: 0;
+        & .song-card {
+            position: relative;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 0.5rem;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease;
+            cursor: pointer;
             box-sizing: border-box;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            & .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 0.5rem;
+                box-sizing: border-box;
+            }
+
+            & h3 {
+
+                font-size: clamp(0.8rem, 2vw, 1rem);
+                margin: 0 0 5px;
+            }
+
+            & audio {
+                width: 100%;
+                outline: none;
+            }
         }
 
-        & h3 {
-            font-size: 0.9em;
-            margin: 0 0 5px;
-        }
-
-        & audio {
-            width: 100%;
-            outline: none;
-        }
     }
 
 
