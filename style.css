@@ -412,7 +412,7 @@ body {
             transition: max-height 0.4s ease;
 
             &.open {
-                max-height: 500px;
+                max-height: 400px;
             }
 
             #ul {
