@@ -17,7 +17,7 @@ btn.addEventListener("click", function () {
     } else {
         document.body.classList.remove('light');
         document.body.classList.add('dark');
-        alert("Look like paid website");
+        // alert("Look like paid website");
     }
 });
 let btnmobile = document.querySelector(".firstchild")
