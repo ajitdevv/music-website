@@ -47,7 +47,7 @@ fetch("songs.json")
     .then(data => {
         allSongs = data;
         songList = data;
-        const randomThree = getRandomSongs(allSongs, 3);
+        const randomThree = getRandomSongs(allSongs, 9);
         renderSongs(randomThree);
     });
 
