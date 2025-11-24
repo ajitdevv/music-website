@@ -810,10 +810,10 @@ body {
 
     /***** Scorll bar *****/
 
-    .scrollable {
+    /* .scrollable {
         height: 100px;
         overflow-y: scroll;
-    }
+    } */
 
     ::-webkit-scrollbar {
         width: .625rem;
