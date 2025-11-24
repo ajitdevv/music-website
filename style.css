@@ -283,7 +283,7 @@ body {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
 
     & .overlay {
         position: absolute;
@@ -774,16 +774,22 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* transition: transform 0.3s ease; */
-        cursor: pointer;
-        box-sizing: border-box;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
+        transition: transform 0.3s ease;
+
+
+        -webkit-transition: transform 0.3s ease;
+        -moz-transition: transform 0.3s ease;
+        -ms-transition: transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
 
         &:hover {
+            cursor: pointer;
+            box-sizing: border-box;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
             transform: scale(1.05);
         }
 
