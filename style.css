@@ -774,7 +774,7 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        transition: transform 0.3s ease;
+        /* transition: transform 0.3s ease; */
         cursor: pointer;
         box-sizing: border-box;
         border-radius: 1rem;
