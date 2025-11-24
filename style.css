@@ -810,12 +810,12 @@ body {
 
     /***** Scorll bar *****/
 
-    /* .scrollable {
+    .scrollable {
         height: 100px;
         overflow-y: scroll;
-    } */
+    }
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: .625rem;
     }
 
@@ -823,6 +823,6 @@ body {
         background: var(--primary-color);
         border-radius: 3.125rem;
 
-    }
+    } */
 
 }
