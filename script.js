@@ -236,4 +236,4 @@ function handleFavClick() {
 }
 
 if (favDesktopBtn) favDesktopBtn.addEventListener('click', handleFavClick);
-if (favMobileBtn) favMobileBtn.addEventListener('click', handleFavClick);
+// if (favMobileBtn) favMobileBtn.addEventListener('click', handleFavClick);
