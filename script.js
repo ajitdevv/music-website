@@ -231,7 +231,7 @@ const favMobileBtn = document.getElementById('show-favorites-small-screen');
 
 function handleFavClick() {
     let favs = JSON.parse(localStorage.getItem('favorites')) || [];
-    const filtered = allSongs.filter(song => favs.includes(String(song.id)));
+    // const filtered = allSongs.filter(song => favs.includes(String(song.id)));
     renderSongs(filtered);
 }
 
