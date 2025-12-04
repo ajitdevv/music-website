@@ -227,7 +227,7 @@ menuItems.forEach(item => {
 
 // Display user's favorite songs based on saved favorites
 const favDesktopBtn = document.getElementById('show-favorites');
-const favMobileBtn = document.getElementById('show-favorites-small-screen');
+// const favMobileBtn = document.getElementById('show-favorites-small-screen');
 
 function handleFavClick() {
     let favs = JSON.parse(localStorage.getItem('favorites')) || [];
