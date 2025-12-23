@@ -1,8 +1,6 @@
 🎶 Music Website
-A **fully functional and responsive music web app** built with **HTML, CSS, and Vanilla JavaScript**, featuring modern UI/UX and interactive audio playback.
-
+A **fully functional and responsive music web app** built with **HTML, CSS, and Vanilla JavaScript**, featuring modern UI/UX and interactive audio playback.**
 ---
-
  🚀 Live Demo
 [Click here to view the live site](https://ajitdevv.github.io/music-website/)
 
